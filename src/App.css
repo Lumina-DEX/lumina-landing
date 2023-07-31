@@ -1,0 +1,79 @@
+.App {
+  width: 100%;
+  color: var(--primary-color);
+  text-align: center;
+  min-height: 100vh;
+}
+
+.background {
+  background-image: url(assets/backgrounds/holo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-family: var(--primary-font);
+  font-size: 82px;
+  font-weight: bolder;
+}
+
+.subtitle {
+  font-family: var(--primary-font);
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+.description {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  margin-bottom: 3rem;
+}
+
+.button {
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  border: 0;
+  border-radius: 10px;
+  min-width: 120px;
+}
+
+.sign-up {
+  background-color: var(--primary-color);
+}
+
+.sign-up > a {
+  color: var(--secondary-color);
+}
+
+.litepaper {
+  background-color: var(--secondary-color);
+}
+
+.litepaper > a {
+  color: var(--primary-color);
+}
+
+/* a {
+  font-family: var(--secondary-font);
+  text-decoration: none;
+} */
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 60px;
+  }
+
+  .subtitle {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
+
+.banner {
+  background-image: url(assets/backgrounds/lumina.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

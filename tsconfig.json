@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
+    "paths": {
+      "$assets": ["./src/assets"],
+      "$assets/*": ["./src/assets/*"],
+      "$constants": ["./src/constants"],
+      "$constants/*": ["./src/constants/*"],
+      "$components": ["./src/components"],
+      "$components/*": ["./src/components/*"],
+      "$contexts": ["./src/contexts"],
+      "$contexts/*": ["./src/contexts/*"],
+      "$pages": ["./src/pages"],
+      "$pages/*": ["./src/pages/*"],
+      "$parts": ["./src/parts"],
+      "$parts/*": ["./src/parts/*"],
+      "$utils": ["./src/utils"],
+      "$utils/*": ["./src/utils/*"],
+      "$lib": ["./src/lib"],
+      "$lib/*": ["./src/lib/*"],
+      "$states": ["./src/states"],
+      "$states/*": ["./src/states/*"],
+      "$types": ["./src/types"],
+      "$types/*": ["./src/types/*"]
+    },
+    "jsx": "react",
+    "rootDirs": [".."],
+    "isolatedModules": true,
+    "lib": ["esnext", "DOM", "DOM.Iterable"],
+    "moduleResolution": "node",
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2020", // Fix to support BigInt
+    "module": "es2022" // Fix to support BigInt
+  },
+  "include": [
+    "./vite.config.ts",
+    "./src/**/*.js",
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
+  ],
+  "exclude": ["./node_modules/**"]
+}

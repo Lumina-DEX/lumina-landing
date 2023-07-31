@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-font: Orbitron;
+  --secondary-font: "Cutive Mono";
+
+  --primary-color: #351c75;
+  --secondary-color: #f7f5de;
+
+  font-family: var(--primary-font), var(--secondary-font), Inter, system-ui,
+    Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--text-primary);
+  background-color: var(--background-l0);
+}
+
+.lightmode {
+  --background-l0: #ffffff;
+  --background-l1: #fff1f9cc;
+  --background-l2: #ffeae0;
+  --background-l3: #aaaaaa;
+  --background-disabled: #00000018;
+  --background-button: #ff238d;
+  --text-default: #111111;
+  --text-primary: #311d72;
+  --text-secondary: #ff238d;
+  --text-tertiary: #ffffff;
+  --text-disabled: #424242;
+  --text-success: #0dbc33;
+  --text-failure: #ff6347;
+  --text-action-primary: #4d369a;
+  --text-action-secondary: #ff238d;
+  --icon-primary: #000000ee;
+  --icon-secondary: #00000099;
+  --icon-tertiary: #00000055;
+  --icon-disabled: #00000044;
+  --icon-success: #0dbc33;
+  --icon-warn: #bf7c08;
+  --icon-failure: #ff6347;
+
+  --light-100: #fff5f0;
+  --light-200: #ffeae0;
+  --light-300: #aaaaaa;
+}
+
+.darkmode {
+  --background-l0: #000000;
+  --background-l1: #1c1b21;
+  --background-l2: #2e2b3c;
+  --background-l3: #311d72;
+  --background-disabled: #ffffff18;
+  --background-button: #ff238d;
+  --text-primary: #ffc0e5;
+  --text-secondary: #f9f9fb;
+  --text-tertiary: #ffffff;
+  --text-disabled: #424242;
+  --text-success: #0dbc33;
+  --text-failure: #ff6347;
+  --text-action-primary: #4d369a;
+  --text-action-secondary: #ff238d;
+  --icon-primary: #000000ee;
+  --icon-secondary: #00000099;
+  --icon-tertiary: #00000055;
+  --icon-disabled: #00000044;
+  --icon-success: #0dbc33;
+  --icon-warn: #bf7c08;
+  --icon-failure: #ff6347;
+}
+
+@layer utilities {
+  .custom-container {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .shadow-10 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .bg-opacity-9 {
+    background-color: rgba(0, 0, 0, 0.09);
+  }
+
+  .w-90 {
+    width: 90%;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+ul.dropdown-content.menu.rounded-box {
+  right: 0;
+}
+
+.setting-btn button {
+  padding: 0px;
+}
+
+.custom-nav-bar {
+  justify-content: space-between;
+}
+
+.border-1 {
+  border: 1px solid !important;
+}
+
+.border-gray-500 {
+  border-color: rgb(107 114 128) !important;
+}
