@@ -1,8 +1,40 @@
 .App {
-  width: 100%;
-  color: var(--primary-color);
   text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .background {
@@ -11,69 +43,14 @@
   background-repeat: no-repeat;
 }
 
-.title {
-  font-family: var(--primary-font);
-  font-size: 82px;
-  font-weight: bolder;
+.bg-light-100 {
+  background-color: #fff5f0;
 }
 
-.subtitle {
-  font-family: var(--primary-font);
-  font-size: 45px;
-  font-weight: bolder;
+.bg-light-200 {
+  background-color: #ffeae0;
 }
 
-.description {
-  font-family: var(--secondary-font);
-  font-size: 14px;
-  margin-bottom: 3rem;
-}
-
-.button {
-  margin: 1rem;
-  padding: 0.5rem 2rem;
-  border: 0;
-  border-radius: 10px;
-  min-width: 120px;
-}
-
-.sign-up {
-  background-color: var(--primary-color);
-}
-
-.sign-up > a {
-  color: var(--secondary-color);
-}
-
-.litepaper {
-  background-color: var(--secondary-color);
-}
-
-.litepaper > a {
-  color: var(--primary-color);
-}
-
-/* a {
-  font-family: var(--secondary-font);
-  text-decoration: none;
-} */
-
-@media (max-width: 320px) {
-  .title {
-    font-size: 60px;
-  }
-
-  .subtitle {
-    font-size: 36px;
-  }
-
-  .description {
-    font-size: 14px;
-  }
-}
-
-.banner {
-  background-image: url(assets/backgrounds/lumina.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+.bg-l1 {
+  background-color: #fff1f9cc;
 }

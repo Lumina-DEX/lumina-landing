@@ -1,21 +1,70 @@
 import React from "react";
 import { Button } from "react-daisyui";
-import PieChartComponent from "$components/Chart/PieChart";
-const labels = ["January", "February", "March", "April", "May", "June"];
+import { Pie } from "@ant-design/charts";
+
+type DataType = "new" | "evaluating" | "ongoing" | "finished" | "archived";
+
+interface PieChartData {
+  type: DataType;
+  value: number;
+}
+
+const pieChartData: PieChartData[] = [
+  {
+    type: "new",
+    value: 40,
+  },
+  {
+    type: "evaluating",
+    value: 25,
+  },
+  {
+    type: "ongoing",
+    value: 22,
+  },
+  {
+    type: "finished",
+    value: 22,
+  },
+  {
+    type: "archived",
+    value: 10,
+  },
+];
+
+const config = {
+  appendPadding: 10,
+  data: pieChartData,
+  angleField: "value",
+  colorField: "type",
+  radius: 1,
+  innerRadius: 0.5,
+  label: {
+    type: "inner",
+    offset: "-50%",
+    content: "{value}",
+    style: {
+      textAlign: "center",
+      fontSize: 14,
+    },
+  },
+  interactions: [{ type: "element-selected" }, { type: "element-active" }],
+  statistic: {
+    title: false as const,
+    content: {
+      style: {
+        whiteSpace: "pre-wrap",
+        overflow: "hidden",
+        textOverflow: "ellipsis",
+      },
+      formatter: function formatter() {
+        return `total\n134`;
+      },
+    },
+  },
+};
 
 function HomePage() {
-  const data = {
-    labels: labels,
-    datasets: [
-      {
-        label: "My First dataset",
-        backgroundColor: "rgb(255, 99, 132)",
-        borderColor: "rgb(0,0,255)",
-        data: [0, 10, 5, 2, 20, 30, 45],
-      },
-    ],
-  };
-
   return (
     <div className="w-full mt-16">
       {/* page1 */}
@@ -179,13 +228,16 @@ function HomePage() {
       </div>
       {/* page7 */}
       <div className="container mx-auto flex flex-col gap-4 mt-10">
+        <div>The Big Opportunity for Lumina: Migrating TradFi to DeFi</div>
+        <div>
+          <Pie {...config} />
+        </div>
         <div className="w-full flex justify-center">
           <div
             className="w-[838px] h-[478px]"
             style={{ backgroundImage: "url(/banner/1.jpg)" }}
           ></div>
         </div>
-        <div>The Big Opportunity for Lumina: Migrating TradFi to DeFi</div>
         {/* pipe chart */}
         <div>{/* <PieChartComponent /> */}</div>
       </div>

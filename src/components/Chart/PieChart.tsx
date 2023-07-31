@@ -1,50 +1,74 @@
-import React, { useState } from "react";
-import { PieChart, Pie } from "recharts";
+import { Pie } from "@ant-design/charts";
+import React from "react";
 
-const PieChartComponent = () => {
-  const data01 = [
-    { name: "Group A", value: 400 },
-    { name: "Group B", value: 300 },
-    { name: "Group C", value: 300 },
-    { name: "Group D", value: 200 },
-  ];
-  const data02 = [
-    { name: "A1", value: 100 },
-    { name: "A2", value: 300 },
-    { name: "B1", value: 100 },
-    { name: "B2", value: 80 },
-    { name: "B3", value: 40 },
-    { name: "B4", value: 30 },
-    { name: "B5", value: 50 },
-    { name: "C1", value: 100 },
-    { name: "C2", value: 200 },
-    { name: "D1", value: 150 },
-    { name: "D2", value: 50 },
-  ];
+type DataType = "new" | "evaluating" | "ongoing" | "finished" | "archived";
 
+interface PieChartData {
+  type: DataType;
+  value: number;
+}
+
+const pieChartData: PieChartData[] = [
+  {
+    type: "new",
+    value: 40,
+  },
+  {
+    type: "evaluating",
+    value: 25,
+  },
+  {
+    type: "ongoing",
+    value: 22,
+  },
+  {
+    type: "finished",
+    value: 22,
+  },
+  {
+    type: "archived",
+    value: 10,
+  },
+];
+
+const config = {
+  PieChartendPadding: 10,
+  data: pieChartData,
+  angleField: "value",
+  colorField: "type",
+  radius: 1,
+  innerRadius: 0.5,
+  label: {
+    type: "inner",
+    offset: "-50%",
+    content: "{value}",
+    style: {
+      textAlign: "center",
+      fontSize: 14,
+    },
+  },
+  interactions: [{ type: "element-selected" }, { type: "element-active" }],
+  statistic: {
+    title: false as const,
+    content: {
+      style: {
+        whiteSpace: "pre-wrap",
+        overflow: "hidden",
+        textOverflow: "ellipsis",
+      },
+      formatter: function formatter() {
+        return `total\n134`;
+      },
+    },
+  },
+};
+
+function PieChart() {
   return (
     <div>
-      <PieChart width={400} height={400}>
-        <Pie
-          data={data01}
-          dataKey="value"
-          cx="50%"
-          cy="50%"
-          outerRadius={60}
-          fill="#8884d8"
-        />
-        <Pie
-          data={data02}
-          dataKey="value"
-          cx="50%"
-          cy="50%"
-          innerRadius={70}
-          outerRadius={90}
-          fill="#82ca9d"
-          label
-        />
-      </PieChart>
+      <Pie {...config} />
     </div>
   );
-};
-export default PieChartComponent;
+}
+
+export default PieChart;
