@@ -54,3 +54,31 @@
 .bg-l1 {
   background-color: #fff1f9cc;
 }
+
+.bg-primary {
+  background-color: #331D70;
+}
+
+.text-light-100 {
+  color: #fff5f0;
+}
+
+.text-light-200 {
+  color: #ffeae0;
+}
+
+.text-l1 {
+  color: #fff1f9cc;
+}
+
+.border-light-100 {
+  border-color: #fff5f0;
+}
+
+.border-light-200 {
+  border-color: #ffeae0;
+}
+
+.border-l1 {
+  border-color: #fff1f9cc;
+}

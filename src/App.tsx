@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <div className={`App ${imageLoaded && "background"}`}>
+    <div className={`App ${imageLoaded && "bg-primary"}`}>
       {imageLoaded ? (
         <>
           <Router>

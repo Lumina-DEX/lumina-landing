@@ -1,6 +1,8 @@
 import React from "react";
-import { Button } from "react-daisyui";
+import { Button } from "antd";
 import { Pie } from "@ant-design/charts";
+import { BsCurrencyExchange } from "react-icons/bs";
+import { MdGeneratingTokens, MdGroups3 } from "react-icons/md";
 
 type DataType = "new" | "evaluating" | "ongoing" | "finished" | "archived";
 
@@ -76,50 +78,78 @@ function HomePage() {
           ></div>
         </div>
 
-        <div className="font-bold text-black text-2xl">
+        <div className="font-bold text-light-100 text-6xl">
           The future of finance is in plain sight.
         </div>
         <div>
-          <Button color="secondary">Sign Up</Button>
+          <Button
+            type="primary"
+            shape="round"
+            size={"large"}
+            danger
+            className="font-bold"
+          >
+            Sign Up
+          </Button>
         </div>
       </div>
       {/* page2 */}
-      <div className="container border border-black  mx-auto mt-10 flex flex-col gap-4 p-10 text-black">
-        <div>
+      <div className="container mx-auto mt-10 flex flex-col gap-4 p-10 text-light-100">
+        <div className="text-3xl">
           Lumina is a zero-knowledge, KYC-enabled, enterprise-ready DEX on Mina
         </div>
-        <div className="flex flex-row justify-between">
-          <div className="flex flex-col gap-3 items-start">
+        <div className="flex flex-row justify-between flex-wrap">
+          <div className="flex flex-col gap-3 items-center basis-1/3">
             <div>Clarity </div>
-            <div className="rounded-lg border-2 border-black p-10">Icon 1</div>
+            <div className="rounded-full border-2 border-light-200 p-8 shadow-md shadow-blue-500/50">
+              <BsCurrencyExchange className="text-8xl" />
+            </div>
             <div>Description 1</div>
           </div>
-          <div className="flex flex-col gap-3 items-start">
-            <div>Confidence</div>
-            <div className="rounded-lg border-2 border-black p-10">Icon 2</div>
-            <div>Description 2</div>
+          <div className="flex flex-col gap-3 items-center basis-1/3">
+            <div>Clarity </div>
+            <div className="rounded-full border-2 border-light-200 p-8 shadow-md shadow-blue-500/50">
+              <MdGeneratingTokens className="text-8xl" />
+            </div>
+            <div>Description 1</div>
           </div>
-          <div className="flex flex-col gap-3 items-start">
-            <div>Compliance </div>
-            <div className="rounded-lg border-2 border-black p-10">Icon 3</div>
-            <div>Description 3</div>
+          <div className="flex flex-col gap-3 items-center basis-1/3">
+            <div>Clarity </div>
+            <div className="rounded-full border-2 border-light-200 p-8 shadow-md shadow-blue-500/50">
+              <MdGroups3 className="text-8xl" />
+            </div>
+            <div>Description 1</div>
           </div>
         </div>
       </div>
       {/* page3 */}
-      <div className="container mx-auto flex flex-col gap-4 mt-10">
-        <div>Backed by the top names in Blockchain and zk! (Press release)</div>
-        <div className="flex flex-row justify-between">
-          <div className="rounded-lg border-2 border-black p-10">
-            Jump Crypto
-          </div>
-          <div className="rounded-lg border-2 border-black p-10">VC Logo</div>
-          <div className="rounded-lg border-2 border-black p-10">
-            Mina Foundation
-          </div>
-          <div className="rounded-lg border-2 border-black p-10">O(1) Labs</div>
+      <div className="container mx-auto flex flex-col gap-4 mt-10 text-light-100">
+        <div className="text-3xl">
+          Backed by the top names in Blockchain and zk! (Press release)
         </div>
-        <div className="py-4 px-10 border-2 border-black">
+        <div className="flex flex-row justify-between items-center flex-wrap">
+          <div className="basis-1/4 px-16">
+            <div className="cursor-pointer h-20 flex justify-center items-center p-8 rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50">
+              <img src="/top/1.svg" loading="lazy"></img>
+            </div>
+          </div>
+          <div className="basis-1/4 px-16">
+            <div className="cursor-pointer h-20 flex justify-center items-center p-8 rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50">
+              <img src="/top/2.svg" loading="lazy"></img>
+            </div>
+          </div>
+          <div className="basis-1/4 px-16">
+            <div className="cursor-pointer h-20 flex justify-center items-center p-8 rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50">
+              <img src="/top/3.svg" loading="lazy"></img>
+            </div>
+          </div>
+          <div className="basis-1/4 px-16">
+            <div className="cursor-pointer h-20 flex justify-center items-center p-8 rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50">
+              <img src="/top/4.svg" loading="lazy"></img>
+            </div>
+          </div>
+        </div>
+        <div className="py-4 px-10 rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50 text-2xl">
           Lumina is a new paradigm that brings order out of chaos: presenting
           decentralized finance in a new light for a digital age, inspired by
           permissioned private trading venues allowing institutional investors
@@ -128,43 +158,65 @@ function HomePage() {
         </div>
       </div>
       {/* page4 */}
-      <div className="container mx-auto flex flex-col gap-4 mt-10">
-        <div>Collaborating with the best in the industry!</div>
+      <div className="container mx-auto flex flex-col gap-4 mt-10 text-light-100">
+        <div className="text-3xl">
+          Collaborating with the best in the industry!
+        </div>
         <div className="flex flex-row justify-between">
-          <div className="flex flex-col gap-4 items-start">
-            <div className="border-2 border-black p-10 rounded-lg"> Zeko</div>
-            <div>L2 Rollup</div>
+          <div className="cursor-pointer rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50 p-5 h-20">
+            <img
+              src="/investors/ascentive-assets.svg"
+              loading="lazy"
+              className="h-11"
+            ></img>
           </div>
-          <div className="flex flex-col gap-4 items-start">
-            <div className="border-2 border-black p-10 rounded-lg"> eTonec</div>
-            <div>zkKYC</div>
+          <div className="cursor-pointer rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50 p-5 h-20">
+            <img
+              src="/investors/cfund.svg"
+              loading="lazy"
+              className="h-11"
+            ></img>
           </div>
-          <div className="flex flex-col gap-4 items-start">
-            <div className="border-2 border-black p-10 rounded-lg"> Kintsu</div>
-            <div>Liquid Staking</div>
+          <div className="cursor-pointer rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50 p-5 h-20">
+            <img
+              src="/investors/kronos.svg"
+              loading="lazy"
+              className="h-11"
+            ></img>
           </div>
-          <div className="flex flex-col gap-4 items-start">
-            <div className="border-2 border-black p-10 rounded-lg"> Auro</div>
-            <div>Wallet</div>
+          <div className="cursor-pointer rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50 p-5 h-20">
+            <img
+              src="/investors/morning-star.svg"
+              loading="lazy"
+              className="h-11"
+            ></img>
           </div>
         </div>
       </div>
       {/* page5 */}
       <div className="container mx-auto flex flex-col gap-4 mt-10">
-        <div>
+        <div className="text-light-100 text-3xl">
           Sign up for the Journey, and get early updates on the Roadmap!
         </div>
         <div>
-          <Button color="secondary">Sign Up</Button>
+          <Button
+            type="primary"
+            shape="round"
+            size={"large"}
+            danger
+            className="font-bold"
+          >
+            Sign Up
+          </Button>
         </div>
         {/* char1 here */}
         <div></div>
       </div>
       {/* page6 */}
-      <div className="container mx-auto flex flex-col gap-4 mt-10">
-        <div>Early builders</div>
-        <div className="flex flex-row justify-between">
-          <div className="flex flex-col gap-1 pr-10">
+      <div className="container mx-auto flex flex-col gap-4 mt-10 text-light-100">
+        <div className="text-4xl">Early builders</div>
+        <div className="flex flex-row justify-between flex-wrap">
+          <div className="flex flex-col gap-1 pr-10 basis-1/4">
             <div className="flex flex-col gap-3 items-center">
               <div className="w-32 h-32 rounded-full bg-light-200"></div>
               <div className="">
@@ -179,7 +231,7 @@ function HomePage() {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col gap-1 px-5">
+          <div className="flex flex-col gap-1 px-5 basis-1/4">
             <div className="flex flex-col gap-3 items-center">
               <div className="w-32 h-32 rounded-full bg-light-200"></div>
               <div className="">
@@ -194,7 +246,7 @@ function HomePage() {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col gap-1 px-5">
+          <div className="flex flex-col gap-1 px-5 basis-1/4">
             <div className="flex flex-col gap-3 items-center">
               <div className="w-32 h-32 rounded-full bg-light-200"></div>
               <div className="">
@@ -209,7 +261,7 @@ function HomePage() {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col gap-1 pl-10">
+          <div className="flex flex-col gap-1 pl-10 basis-1/4">
             <div className="flex flex-col gap-3 items-center">
               <div className="w-32 h-32 rounded-full bg-light-200"></div>
               <div className="">
@@ -227,8 +279,10 @@ function HomePage() {
         </div>
       </div>
       {/* page7 */}
-      <div className="container mx-auto flex flex-col gap-4 mt-10">
-        <div>The Big Opportunity for Lumina: Migrating TradFi to DeFi</div>
+      <div className="container mx-auto flex flex-col gap-4 mt-10 text-light-100">
+        <div className="text-3xl">
+          The Big Opportunity for Lumina: Migrating TradFi to DeFi
+        </div>
         <div>
           <Pie {...config} />
         </div>
