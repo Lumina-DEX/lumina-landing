@@ -3,74 +3,13 @@ import { Button, Carousel } from "antd";
 import { Pie } from "@ant-design/charts";
 import { BsCurrencyExchange } from "react-icons/bs";
 import { MdGeneratingTokens, MdGroups3 } from "react-icons/md";
-
-type DataType = "new" | "evaluating" | "ongoing" | "finished" | "archived";
-
-interface PieChartData {
-  type: DataType;
-  value: number;
-}
-
-const pieChartData: PieChartData[] = [
-  {
-    type: "new",
-    value: 40,
-  },
-  {
-    type: "evaluating",
-    value: 25,
-  },
-  {
-    type: "ongoing",
-    value: 22,
-  },
-  {
-    type: "finished",
-    value: 22,
-  },
-  {
-    type: "archived",
-    value: 10,
-  },
-];
-
-const config = {
-  appendPadding: 10,
-  data: pieChartData,
-  angleField: "value",
-  colorField: "type",
-  radius: 1,
-  innerRadius: 0.5,
-  label: {
-    type: "inner",
-    offset: "-50%",
-    content: "{value}",
-    style: {
-      textAlign: "center",
-      fontSize: 14,
-    },
-  },
-  interactions: [{ type: "element-selected" }, { type: "element-active" }],
-  statistic: {
-    title: false as const,
-    content: {
-      style: {
-        whiteSpace: "pre-wrap",
-        overflow: "hidden",
-        textOverflow: "ellipsis",
-      },
-      formatter: function formatter() {
-        return `total\n134`;
-      },
-    },
-  },
-};
+import PieChartC from "../components/Chart/PieChart";
 
 function HomePage() {
   return (
     <div className="w-full mt-16">
       {/* page1 */}
-      <div className="flex flex-col gap-4 justify-center">
+      <div className="flex flex-col gap-8 justify-center">
         <Carousel autoplay effect="fade">
           <div>
             <div
@@ -120,7 +59,7 @@ function HomePage() {
         </div>
       </div>
       {/* page2 */}
-      <div className="container mx-auto mt-10 flex flex-col gap-4 text-light-100">
+      <div className="container mx-auto mt-20 flex flex-col gap-8 text-light-100">
         <div className="text-4xl">
           Lumina is a zero-knowledge, KYC-enabled, enterprise-ready DEX on Mina
         </div>
@@ -149,28 +88,28 @@ function HomePage() {
         </div>
       </div>
       {/* page3 */}
-      <div className="container mx-auto flex flex-col gap-6 mt-10 text-light-100">
+      <div className="container mx-auto flex flex-col gap-8 mt-16 text-light-100">
         <div className="text-4xl">
           Backed by the top names in Blockchain and zk! (Press release)
         </div>
         <div className="flex flex-row justify-center items-center flex-wrap">
           <div className="flex flex-col gap-3 items-center basis-1/4 px-5">
-            <div className="cursor-pointer h-20 flex justify-center items-center p-8 rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50">
+            <div className="cursor-pointer h-20 flex justify-center mt-4 items-center px-6 py-2 w-44 rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50">
               <img src="/top/1.svg" loading="lazy" alt=""></img>
             </div>
           </div>
           <div className="flex flex-col gap-3 items-center basis-1/4 px-5">
-            <div className="cursor-pointer h-20 flex justify-center items-center p-8 rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50">
+            <div className="cursor-pointer h-20 flex justify-center mt-4 items-center px-6 py-2 w-44 rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50">
               <img src="/top/2.svg" loading="lazy" alt=""></img>
             </div>
           </div>
           <div className="flex flex-col gap-3 items-center basis-1/4 px-5">
-            <div className="cursor-pointer h-20 flex justify-center items-center p-8 rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50">
+            <div className="cursor-pointer h-20 flex justify-center mt-4 items-center px-6 py-2 w-44 rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50">
               <img src="/top/3.svg" loading="lazy" alt=""></img>
             </div>
           </div>
           <div className="flex flex-col gap-3 items-center basis-1/4 px-5">
-            <div className="cursor-pointer h-20 flex justify-center items-center p-8 rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50">
+            <div className="cursor-pointer h-20 flex justify-center mt-4 items-center px-6 py-2 w-44 rounded-lg border-2 border-light-200 shadow-md shadow-blue-500/50">
               <img src="/top/4.svg" loading="lazy" alt=""></img>
             </div>
           </div>
@@ -184,7 +123,7 @@ function HomePage() {
         </div>
       </div>
       {/* page4 */}
-      <div className="container mx-auto flex flex-col gap-6 mt-10 text-light-100">
+      <div className="container mx-auto flex flex-col gap-8 mt-20 text-light-100">
         <div className="text-4xl">
           Collaborating with the best in the industry!
         </div>
@@ -224,7 +163,7 @@ function HomePage() {
         </div>
       </div>
       {/* page5 */}
-      <div className="container mx-auto flex flex-col gap-4 mt-10">
+      <div className="container mx-auto flex flex-col gap-8 mt-20">
         <div className="text-light-100 text-4xl">
           Sign up for the Journey, and get early updates on the Roadmap!
         </div>
@@ -243,7 +182,7 @@ function HomePage() {
         <div></div>
       </div>
       {/* page6 */}
-      <div className="container mx-auto flex flex-col gap-6 mt-10 text-light-100">
+      <div className="container mx-auto flex flex-col gap-8 mt-20 text-light-100">
         <div className="text-4xl">Early builders</div>
         <div className="flex flex-row justify-center flex-wrap">
           <div className="flex flex-col gap-1 basis-1/4">
@@ -309,16 +248,14 @@ function HomePage() {
         </div>
       </div>
       {/* page7 */}
-      <div className="container mx-auto flex flex-col gap-6 mt-10 text-light-100">
+      <div className="container mx-auto flex flex-col gap-8 mt-20 text-light-100">
         <div className="text-4xl">
           The Big Opportunity for Lumina: Migrating TradFi to DeFi
         </div>
-        <div>
-          <Pie {...config} />
-        </div>
+        <PieChartC />
       </div>
       {/* page8 */}
-      <div className="container mx-auto flex flex-col gap-6 mt-10 text-light-100 mb-10">
+      <div className="container mx-auto flex flex-col gap-8 mt-20 text-light-100 mb-10">
         <div className="text-4xl">The Technology Stack</div>
         <div className="text-left text-2xl">
           Permissionless and Permissioned Markets

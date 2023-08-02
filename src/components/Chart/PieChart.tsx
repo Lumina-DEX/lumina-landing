@@ -55,6 +55,7 @@ const config = {
         whiteSpace: "pre-wrap",
         overflow: "hidden",
         textOverflow: "ellipsis",
+        color: "#ffffff",
       },
       formatter: function formatter() {
         return `total\n134`;
