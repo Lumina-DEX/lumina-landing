@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Carousel } from "antd";
-import { Pie } from "@ant-design/charts";
 import { BsCurrencyExchange } from "react-icons/bs";
 import { MdGeneratingTokens, MdGroups3 } from "react-icons/md";
 import PieChartC from "../components/Chart/PieChart";
