@@ -1,7 +1,7 @@
 import { Pie } from "@ant-design/charts";
 import React from "react";
 
-type DataType = "new" | "evaluating" | "ongoing" | "finished" | "archived";
+type DataType = "Fixed Income" | "Equities" | "OTC Derivatives" | "Blockchain";
 
 interface PieChartData {
   type: DataType;
@@ -10,24 +10,20 @@ interface PieChartData {
 
 const pieChartData: PieChartData[] = [
   {
-    type: "new",
-    value: 40,
+    type: "Fixed Income",
+    value: 46.9,
   },
   {
-    type: "evaluating",
-    value: 25,
+    type: "Equities",
+    value: 46,
   },
   {
-    type: "ongoing",
-    value: 22,
+    type: "OTC Derivatives",
+    value: 6.8,
   },
   {
-    type: "finished",
-    value: 22,
-  },
-  {
-    type: "archived",
-    value: 10,
+    type: "Blockchain",
+    value: 0.3,
   },
 ];
 
@@ -55,10 +51,11 @@ const config = {
         whiteSpace: "pre-wrap",
         overflow: "hidden",
         textOverflow: "ellipsis",
-        color: "#ffffff",
+        color: "#351c75",
+        fontSize: "20px",
       },
       formatter: function formatter() {
-        return `total\n134`;
+        return `Global Market Share %`;
       },
     },
   },
@@ -66,7 +63,7 @@ const config = {
 
 function PieChart() {
   return (
-    <div>
+    <div className="w-1/2 max-xl:w-full">
       <Pie {...config} />
     </div>
   );

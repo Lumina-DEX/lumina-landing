@@ -1,3 +1,7 @@
+* {
+  font-family: Verdana;
+}
+
 .App {
   text-align: center;
 }
@@ -52,15 +56,23 @@
 }
 
 .bg-l1 {
-  background-color: #fff1f9cc;
+  background-color: #351c75;
 }
 
 .bg-primary {
-  background-color: #331D70;
+  background-color: #ffffff;
+}
+
+.bg-second {
+  background-color: #f7f5de;
 }
 
 .text-light-100 {
   color: #fff5f0;
+}
+
+.text-dark-purple {
+  color: #351c75;
 }
 
 .text-light-200 {
@@ -79,6 +91,36 @@
   border-color: #ffeae0;
 }
 
-.border-l1 {
-  border-color: #fff1f9cc;
+.border-primary {
+  border-color: #351c75;
+}
+
+.left-menu {
+  width: 150px !important;
+  background-color: #fff5f0 !important;
+}
+
+.ant-drawer-content-wrapper {
+  width: 150px !important;
+}
+
+.font-Verdana {
+  font-family: Verdana;
+}
+
+.font-Agrandir-wide {
+  font-family: "Agrandir wide";
+}
+li {
+  font-family: "Agrandir wide";
+}
+
+.height-60 {
+  height: 60px !important;
+}
+
+.menu-btn {
+  background-color: #fff5f0 !important;
+  color: #351c75 !important;
+  border-color: #ffeae0 !important;
 }

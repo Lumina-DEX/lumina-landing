@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="bg-primary py-10">
-      <div className="container border-t-2 border-light-200 mx-auto">
-        <div className="mt-10 flex flex-col gap-6">
+      <div className="container border-t-2 border-primary mx-auto text-primary text-dark-purple">
+        <div className="mt-10 flex flex-col gap-6 ">
           <div className="flex flex-row gap-4 justify-start items-center">
-            <div className="text-light-100 text-3xl">
+            <div className="text-3xl">
               <Link to="/"> Lumina </Link>
             </div>
-            <div className="text-light-100">|</div>
-            <div className="text-light-100"> Privacy</div>
+            <div className="">|</div>
+            <div className=""> Privacy</div>
           </div>
-          <div className="text-light-100 text-left">
+          <div className="text-left">
             This website is maintained by the Interchain Foundation (ICF) on
             behalf of the decentralized community. The contents and opinions of
             this website do not necessarily reflect those of the ICF. This
