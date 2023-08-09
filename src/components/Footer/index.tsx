@@ -8,12 +8,10 @@ const Footer = () => {
         <div className="mt-10 flex flex-col gap-6 ">
           <div className="flex flex-row gap-4 justify-start items-center">
             <div className="text-3xl">
-              <Link to="/"> Lumina </Link>
+              <Link to="/"> ICF disclaimer </Link>
             </div>
-            <div className="">|</div>
-            <div className=""> Privacy</div>
           </div>
-          <div className="text-left">
+          <div className="text-left text-sm">
             This website is maintained by the Interchain Foundation (ICF) on
             behalf of the decentralized community. The contents and opinions of
             this website do not necessarily reflect those of the ICF. This
