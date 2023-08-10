@@ -72,16 +72,21 @@ const Header = () => {
         </div>
 
         {leftMenu()}
-        <div className="flex flex-row gap-4 text-lg max-md:hidden">
+        <div className="flex flex-row gap-4 text-lg items-center max-md:hidden">
           <Link to={"/Telegram"}>
             <div className="text-white text-3xl">
               <FaTelegramPlane />
             </div>
           </Link>
           <Link to={"/Twitter"}>
-            <Button type="primary" ghost className="menu-btn">
-              Twitter
-            </Button>
+            <div
+              className="w-6 h-6"
+              style={{
+                backgroundImage: "url(/icon/twitter_x.png)",
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
           </Link>
           <Link to={"/Medium"}>
             <div className="text-white text-3xl">
