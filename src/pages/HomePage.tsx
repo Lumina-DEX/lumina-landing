@@ -228,14 +228,15 @@ function HomePage() {
           </div>
           <div className="flex flex-col gap-1 basis-1/4 p-4">
             <div className="flex flex-col gap-3 items-center">
-              <div className="w-32 h-32 rounded-full overflow-hidden">
-                <img
-                  src="/builders/Kesu.png"
-                  loading="lazy"
-                  alt=""
-                  className="w-full h-full"
-                ></img>
-              </div>
+              <div
+                className="w-32 h-32 rounded-full"
+                style={{
+                  backgroundImage: "url(/builders/Kesu.png)",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
+              ></div>
               <div className="">
                 <Link to={"https://www.linkedin.com/in/kesujames/"}>
                   Kesu James
