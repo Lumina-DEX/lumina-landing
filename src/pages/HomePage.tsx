@@ -10,7 +10,7 @@ function HomePage() {
       {/* section1 */}
       <div className="flex flex-col justify-center">
         <div
-          className="w-full flex justify-center items-center flex-row py-10 max-sm:py-10"
+          className="w-full flex justify-center items-center flex-row py-20 max-sm:py-10"
           style={{
             backgroundImage: "linear-gradient(#351c75, #1D133C)",
           }}
@@ -251,15 +251,20 @@ function HomePage() {
       {/* section5 */}
       <div className="flex flex-col gap-y-4">
         <div className="container mx-auto">
-          <div className="w-3/5 mx-auto">
-            <div
-              className="w-full h-[300px] max-sm:h-[150px]"
-              style={{
-                backgroundImage: "url(/banner/1.jpg)",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "100% 100%",
-              }}
-            ></div>
+          <div
+            className="w-3/5 mx-auto flex justify-center items-center flex-row py-16 max-sm:py-10"
+            style={{
+              backgroundImage: "linear-gradient(#351c75, #1D133C)",
+            }}
+          >
+            <div className="basis-3/4">
+              <img
+                src="/logo/logo2.png"
+                loading="lazy"
+                alt="lumina"
+                className="w-full h-full"
+              ></img>
+            </div>
           </div>
         </div>
 
