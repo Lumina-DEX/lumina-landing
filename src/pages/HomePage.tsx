@@ -1,10 +1,20 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { Button } from "antd";
-import { BsCurrencyExchange } from "react-icons/bs";
+import { BsCurrencyExchange, BsPenFill } from "react-icons/bs";
+import { FaHammer } from "react-icons/fa";
 import { MdGeneratingTokens, MdGroups3 } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { FaTelegramPlane } from "react-icons/fa";
+import { BiLogoMediumOld } from "react-icons/bi";
 
 function HomePage() {
+  const [windowWidth, setWindowWidth] = useState(1920);
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+  }, []);
   return (
     <div className="w-full mt-16">
       {/* section1 */}
@@ -25,7 +35,7 @@ function HomePage() {
           </div>
         </div>
         <div
-          className="py-10 flex flex-col gap-4"
+          className="py-10 flex flex-col gap-6"
           style={{
             backgroundImage: "url(/background/background.png)",
             backgroundSize: "cover",
@@ -33,9 +43,9 @@ function HomePage() {
           }}
         >
           <div className="font-bold text-dark-purple text-3xl font-Verdana">
-            The future of finance is in plain sight.
+            The future of finance is in plain sight
           </div>
-          <div className="text-dark-purple font-bold">
+          <div className="text-dark-purple font-bold px-2">
             Lumina is a zero-knowledge, KYC-enabled, enterprise-ready DEX on
             Mina
           </div>
@@ -58,41 +68,66 @@ function HomePage() {
         </div>
       </div>
       {/* section2 */}
-      <div className=" py-10">
+      <div className="pt-8 pb-4">
         <div className="container mx-auto flex flex-col gap-8 text-dark-purple">
           <div className="flex flex-row justify-center flex-wrap w-2/3 mx-auto">
-            <div className="flex items-center basis-1/3 px-5 flex-col gap-4">
-              <div className="font-Agrandir-wide text-xl">Clarity </div>
-              <div className="rounded-full border-2 border-primary p-8 shadow-md shadow-blue-500/50">
-                <BsCurrencyExchange className="text-8xl" />
+            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2">
+              <div className="font-Agrandir-wide text-xl font-bold">
+                Clarity
               </div>
-              <div className="font-Agrandir-wide">
-                Zero-knowledge proofs enable trustless, private, transactions
-                with verified counterparties without exposing sensitive
-                information.
+              <div className="rounded-full border-2 border-primary p-6 shadow-md shadow-blue-500/50">
+                <BsCurrencyExchange className="text-[80px]" />
               </div>
+              {windowWidth <= 375 ? (
+                <div className="font-Agrandir-wide">
+                  zkProofs enable private transactions with verified
+                  counterparties
+                </div>
+              ) : (
+                <div className="font-Agrandir-wide">
+                  Zero-knowledge proofs enable trustless, private, transactions
+                  with verified counterparties without exposing sensitive
+                  information
+                </div>
+              )}
             </div>
-            <div className="flex items-center basis-1/3 px-5 flex-col gap-4">
-              <div className="font-Agrandir-wide text-xl"> Compliance </div>
-              <div className="rounded-full border-2 border-primary p-8 shadow-md shadow-blue-500/50">
-                <MdGeneratingTokens className="text-8xl" />
+            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2">
+              <div className="font-Agrandir-wide text-xl font-bold">
+                Compliance
               </div>
-              <div className="font-Agrandir-wide ">
-                Built-in KYC, permissioned liquidity pools, and privacy for
-                retail and institutional users in accordance with prevailing
-                regulatory requirements
+              <div className="rounded-full border-2 border-primary p-6 shadow-md shadow-blue-500/50">
+                <MdGeneratingTokens className="text-[80px]" />
               </div>
+              {windowWidth <= 375 ? (
+                <div className="font-Agrandir-wide ">
+                  Built-in KYC and permissioned liquidity pools
+                </div>
+              ) : (
+                <div className="font-Agrandir-wide ">
+                  Built-in KYC, permissioned liquidity pools, and privacy for
+                  retail and institutional users in accordance with prevailing
+                  regulatory requirements
+                </div>
+              )}
             </div>
-            <div className="flex items-center basis-1/3 px-5 flex-col gap-4">
-              <div className="font-Agrandir-wide text-xl">Confidence </div>
-              <div className="rounded-full border-2 border-primary p-8 shadow-md shadow-blue-500/50">
-                <MdGroups3 className="text-8xl" />
+            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2">
+              <div className="font-Agrandir-wide text-xl font-bold">
+                Confidence
               </div>
-              <div className="font-Agrandir-wide ">
-                Decentralized exchange needs a guiding light. Our thoughtful
-                approach to decentralized compliance positions DeFi as a clear
-                growth catalyst for TradFi and Web2 companies
+              <div className="rounded-full border-2 border-primary p-6 shadow-md shadow-blue-500/50">
+                <MdGroups3 className="text-[80px]" />
               </div>
+              {windowWidth <= 375 ? (
+                <div className="font-Agrandir-wide ">
+                  Lumina is the guiding light for TradFi and Web2 DeFi ambitions
+                </div>
+              ) : (
+                <div className="font-Agrandir-wide ">
+                  Decentralized exchange needs a guiding light. Our thoughtful
+                  approach to decentralized compliance positions DeFi as a clear
+                  growth catalyst for TradFi and Web2 companies
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -175,7 +210,7 @@ function HomePage() {
           <div className="flex flex-col gap-1 basis-1/4 p-4">
             <div className="flex flex-col gap-3 items-center">
               <div
-                className="w-32 h-32 rounded-full"
+                className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
                 style={{
                   backgroundImage: "url(/builders/Evan.jpg)",
                   backgroundSize: "contain",
@@ -187,14 +222,14 @@ function HomePage() {
                   Evan Kereiakes
                 </Link>
                 <br />
-                <span>CEO</span>
+                <span className="italic">CEO</span>
               </div>
             </div>
           </div>
           <div className="flex flex-col gap-1 basis-1/4 p-4">
             <div className="flex flex-col gap-3 items-center">
               <div
-                className="w-32 h-32 rounded-full"
+                className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
                 style={{
                   backgroundImage: "url(/builders/Sebastien.jpg)",
                   backgroundSize: "contain",
@@ -206,14 +241,14 @@ function HomePage() {
                   Sebastien Guillemot
                 </Link>
                 <br />
-                <span>CTO</span>
+                <span className="italic">CTO</span>
               </div>
             </div>
           </div>
           <div className="flex flex-col gap-1 basis-1/4 p-4">
             <div className="flex flex-col gap-3 items-center">
               <div
-                className="w-32 h-32 rounded-full"
+                className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
                 style={{
                   backgroundImage: "url(/builders/Gregory.png)",
                   backgroundSize: "contain",
@@ -225,14 +260,14 @@ function HomePage() {
                   Gregory Santini
                 </Link>
                 <br />
-                <span>Front-End</span>
+                <span className="italic">Front-End</span>
               </div>
             </div>
           </div>
           <div className="flex flex-col gap-1 basis-1/4 p-4">
             <div className="flex flex-col gap-3 items-center">
               <div
-                className="w-32 h-32 rounded-full"
+                className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
                 style={{
                   backgroundImage: "url(/builders/Kesu.png)",
                   backgroundSize: "cover",
@@ -245,35 +280,90 @@ function HomePage() {
                   Kesu James
                 </Link>
                 <br />
-                <span>Creative</span>
+                <span className="italic">Creative</span>
               </div>
             </div>
           </div>
         </div>
+        <div className="w-1/2 mx-auto flex justify-center items-center flex-row max-md:w-3/5">
+          <img
+            src="/logo/logo3.png"
+            loading="lazy"
+            alt="lumina"
+            className="w-full h-full"
+          ></img>
+        </div>
       </div>
       {/* section5 */}
-      <div className="flex flex-col gap-y-4">
-        <div className="container mx-auto">
-          <div
-            className="w-3/5 mx-auto flex justify-center items-center flex-row py-16 max-sm:py-10"
-            style={{
-              backgroundImage: "linear-gradient(#351c75, #1D133C)",
-            }}
-          >
-            <div className="basis-3/4">
-              <img
-                src="/logo/logo2.png"
-                loading="lazy"
-                alt="lumina"
-                className="w-full h-full"
-              ></img>
+      <div
+        className="flex flex-col py-10 gap-y-4"
+        style={{
+          backgroundImage: "url(/background/background.png)",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="font-bold text-dark-purple text-3xl font-Verdana">
+          Get Involved!
+        </div>
+        <div className="flex flex-row gap-x-4 justify-center items-center">
+          <Link to={"https://telegram.com"}>
+            <div className="text-dark-purple text-5xl">
+              <FaTelegramPlane />
             </div>
+          </Link>
+          <Link to={"https://twitter.com"}>
+            <div
+              className="w-8 h-8"
+              style={{
+                backgroundImage: "url(/icon/twitter_x.png)",
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+          </Link>
+          <Link to={"https://medium.com"}>
+            <div className="text-dark-purple text-5xl">
+              <BiLogoMediumOld />
+            </div>
+          </Link>
+        </div>
+        <div className="flex flex-row justify-center gap-x-4 text-dark-purple">
+          <div className="flex flex-col gap-y-4 items-center">
+            <div className="font-bold">Builders & Community</div>
+            <div className="text-5xl cursor-pointer">
+              <FaHammer />
+            </div>
+            <Button
+              shape="round"
+              size={"large"}
+              className="font-bold bg-l1 text-white border-primary"
+            >
+              Sign Up
+            </Button>
+          </div>
+          <div className="flex flex-col gap-y-4 items-center">
+            <div className="font-bold">Investors and Partners</div>
+            <div className="text-5xl cursor-pointer">
+              <BsPenFill />
+            </div>
+            <Button
+              shape="round"
+              size={"large"}
+              className="font-bold text-dark-purple border-primary bg-white text-white"
+            >
+              Email
+            </Button>
           </div>
         </div>
-
-        <div className="text-2xl text-dark-purple">
+        <div className="text-xl text-dark-purple break-words px-3">
+          Investors and Partners: email
+          <a href="mailto:contact@luminadex.com">contact@luminadex.com</a>
+          to join forces
+        </div>
+        <div className="text-xl text-dark-purple">
           “There is always light. If only we’re brave enough to be it.”
-          <br />- Amanda Gorman
+          <span className="text-base"> - Amanda Gorman</span>
         </div>
       </div>
     </div>
