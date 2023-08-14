@@ -27,18 +27,18 @@ const Header = () => {
     >
       <div className="flex flex-col gap-4 items-center">
         <Link to={"/Telegram"} onClick={onClose}>
-          <Button type="primary" ghost className="w-24 text-center">
-            Telegram
+          <Button className="w-28 text-center !bg-white border-primary ">
+            <p className="text-dark-purple font-bold">Telegram</p>
           </Button>
         </Link>
         <Link to={"/Twitter"} onClick={onClose}>
-          <Button type="primary" ghost className="w-24 text-center">
-            Twitter
+          <Button className="w-28 text-center !bg-white border-primary">
+            <p className="text-dark-purple font-bold">Twitter</p>
           </Button>
         </Link>
         <Link to={"/Medium"} onClick={onClose}>
-          <Button type="primary" ghost className="w-24 text-center">
-            Medium
+          <Button className="w-28 text-center !bg-white border-primary">
+            <p className="text-dark-purple font-bold">Medium</p>
           </Button>
         </Link>
       </div>
