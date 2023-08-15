@@ -140,58 +140,65 @@ function HomePage() {
             Backed by the top names in Blockchain and zk!
           </div>
           <div className="flex flex-row justify-center items-center flex-wrap px-28 gap-y-4">
-            <div className="flex items-center justify-center basis-1/4 px-5">
-              <div className="h-32 w-32 flex justify-center  items-center px-2 py-2 rounded-lg border-2 border-primary shadow-md shadow-blue-500/50 ">
-                <Link to={"https://jumpcrypto.com/"} className="w-full h-full">
-                  <img
-                    src="/investors/big.png"
-                    loading="lazy"
-                    alt="big"
+            <div className="basis-1/2 flex flex-row">
+              <div className="flex items-center justify-center basis-1/2 px-5">
+                <div className="h-32 w-32 flex justify-center  items-center px-2 py-2 rounded-lg border-2 border-primary shadow-md shadow-blue-500/50 ">
+                  <Link
+                    to={"https://jumpcrypto.com/"}
                     className="w-full h-full"
-                  ></img>
-                </Link>
+                  >
+                    <img
+                      src="/investors/big.png"
+                      loading="lazy"
+                      alt="big"
+                      className="w-full h-full"
+                    ></img>
+                  </Link>
+                </div>
+              </div>
+              <div className="flex items-center justify-center basis-1/2 px-5 ">
+                <div className="h-32 w-32 flex justify-center  items-center px-2 py-2 rounded-lg border-2 border-primary shadow-md shadow-blue-500/50">
+                  <Link
+                    to={"https://www.bigbrain.holdings/"}
+                    className="w-full h-full"
+                  >
+                    <img
+                      src="/investors/Jump.png"
+                      loading="lazy"
+                      alt="Jump"
+                      className="w-full h-full"
+                    ></img>
+                  </Link>
+                </div>
               </div>
             </div>
-            <div className="flex items-center justify-center basis-1/4 px-5">
-              <div className="h-32 w-32 flex justify-center  items-center px-2 py-2 rounded-lg border-2 border-primary shadow-md shadow-blue-500/50">
-                <Link
-                  to={"https://www.bigbrain.holdings/"}
-                  className="w-full h-full"
-                >
-                  <img
-                    src="/investors/Jump.png"
-                    loading="lazy"
-                    alt="Jump"
+            <div className="basis-1/2 flex flex-row">
+              <div className="flex items-center justify-center basis-1/2 px-5 ">
+                <div className="h-32 w-32 cursor-pointer flex justify-center  items-center px-2 py-2 rounded-lg border-2 border-primary shadow-md shadow-blue-500/50">
+                  <Link
+                    to={"https://www.minafoundation.com/"}
                     className="w-full h-full"
-                  ></img>
-                </Link>
+                  >
+                    <img
+                      src="/investors/Mina.png"
+                      loading="lazy"
+                      alt="Mina"
+                      className="w-full h-full"
+                    ></img>
+                  </Link>
+                </div>
               </div>
-            </div>
-            <div className="flex items-center justify-center basis-1/4 px-5">
-              <div className="h-32 w-32 cursor-pointer flex justify-center  items-center px-2 py-2 rounded-lg border-2 border-primary shadow-md shadow-blue-500/50">
-                <Link
-                  to={"https://www.minafoundation.com/"}
-                  className="w-full h-full"
-                >
-                  <img
-                    src="/investors/Mina.png"
-                    loading="lazy"
-                    alt="Mina"
-                    className="w-full h-full"
-                  ></img>
-                </Link>
-              </div>
-            </div>
-            <div className="flex items-center justify-center basis-1/4 px-5">
-              <div className="h-32 w-32 cursor-pointer flex justify-center  items-center px-2 py-2 rounded-lg border-2 border-primary shadow-md shadow-blue-500/50">
-                <Link to={"https://o1labs.org/"} className="w-full h-full">
-                  <img
-                    src="/investors/O(1).jpeg"
-                    loading="lazy"
-                    alt="o1labs"
-                    className="w-full h-full"
-                  ></img>
-                </Link>
+              <div className="flex items-center justify-center basis-1/2 px-5">
+                <div className="h-32 w-32 cursor-pointer flex justify-center  items-center px-2 py-2 rounded-lg border-2 border-primary shadow-md shadow-blue-500/50">
+                  <Link to={"https://o1labs.org/"} className="w-full h-full">
+                    <img
+                      src="/investors/O(1).jpeg"
+                      loading="lazy"
+                      alt="o1labs"
+                      className="w-full h-full"
+                    ></img>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -206,81 +213,85 @@ function HomePage() {
       {/* section4 */}
       <div className="container mx-auto flex flex-col gap-8 text-dark-purple pt-10 pb-8">
         <div className="text-2xl">Early builders</div>
-        <div className="flex flex-row justify-center flex-wrap">
-          <div className="flex flex-col gap-1 basis-1/4 p-4">
-            <div className="flex flex-col gap-3 items-center">
-              <div
-                className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
-                style={{
-                  backgroundImage: "url(/builders/Evan.jpg)",
-                  backgroundSize: "contain",
-                  backgroundRepeat: "no-repeat",
-                }}
-              ></div>
-              <div className="">
-                <Link to="https://www.linkedin.com/in/evan-kereiakes/">
-                  Evan Kereiakes
-                </Link>
-                <br />
-                <span className="italic">CEO</span>
+        <div className="flex flex-row justify-center flex-wrap px-28">
+          <div className="flex flex-row basis-1/2">
+            <div className="flex flex-col gap-1 basis-1/2 p-4">
+              <div className="flex flex-col gap-3 items-center">
+                <div
+                  className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
+                  style={{
+                    backgroundImage: "url(/builders/Evan.jpg)",
+                    backgroundSize: "contain",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                ></div>
+                <div className="">
+                  <Link to="https://www.linkedin.com/in/evan-kereiakes/">
+                    Evan Kereiakes
+                  </Link>
+                  <br />
+                  <span className="italic">CEO</span>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col gap-1 basis-1/2 p-4">
+              <div className="flex flex-col gap-3 items-center">
+                <div
+                  className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
+                  style={{
+                    backgroundImage: "url(/builders/Sebastien.jpg)",
+                    backgroundSize: "contain",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                ></div>
+                <div className="">
+                  <Link to="https://www.linkedin.com/in/sebastiengllmt/">
+                    Sebastien Guillemot
+                  </Link>
+                  <br />
+                  <span className="italic">CTO</span>
+                </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-1 basis-1/4 p-4">
-            <div className="flex flex-col gap-3 items-center">
-              <div
-                className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
-                style={{
-                  backgroundImage: "url(/builders/Sebastien.jpg)",
-                  backgroundSize: "contain",
-                  backgroundRepeat: "no-repeat",
-                }}
-              ></div>
-              <div className="">
-                <Link to="https://www.linkedin.com/in/sebastiengllmt/">
-                  Sebastien Guillemot
-                </Link>
-                <br />
-                <span className="italic">CTO</span>
+          <div className="flex flex-row basis-1/2">
+            <div className="flex flex-col gap-1 basis-1/2 p-4">
+              <div className="flex flex-col gap-3 items-center">
+                <div
+                  className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
+                  style={{
+                    backgroundImage: "url(/builders/Gregory.png)",
+                    backgroundSize: "contain",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                ></div>
+                <div className="">
+                  <Link to="https://www.linkedin.com/in/greg-peter-santini-524886184/">
+                    Gregory Santini
+                  </Link>
+                  <br />
+                  <span className="italic">Front-End</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="flex flex-col gap-1 basis-1/4 p-4">
-            <div className="flex flex-col gap-3 items-center">
-              <div
-                className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
-                style={{
-                  backgroundImage: "url(/builders/Gregory.png)",
-                  backgroundSize: "contain",
-                  backgroundRepeat: "no-repeat",
-                }}
-              ></div>
-              <div className="">
-                <Link to="https://www.linkedin.com/in/greg-peter-santini-524886184/">
-                  Gregory Santini
-                </Link>
-                <br />
-                <span className="italic">Front-End</span>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col gap-1 basis-1/4 p-4">
-            <div className="flex flex-col gap-3 items-center">
-              <div
-                className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
-                style={{
-                  backgroundImage: "url(/builders/Kesu.png)",
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                }}
-              ></div>
-              <div className="">
-                <Link to={"https://www.linkedin.com/in/kesujames/"}>
-                  Kesu James
-                </Link>
-                <br />
-                <span className="italic">Creative</span>
+            <div className="flex flex-col gap-1 basis-1/2 p-4">
+              <div className="flex flex-col gap-3 items-center">
+                <div
+                  className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
+                  style={{
+                    backgroundImage: "url(/builders/Kesu.png)",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                  }}
+                ></div>
+                <div className="">
+                  <Link to={"https://www.linkedin.com/in/kesujames/"}>
+                    Kesu James
+                  </Link>
+                  <br />
+                  <span className="italic">Creative</span>
+                </div>
               </div>
             </div>
           </div>
