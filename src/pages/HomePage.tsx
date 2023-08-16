@@ -53,13 +53,15 @@ function HomePage() {
             Mina
           </div>
           <div className="flex flex-row gap-x-4 justify-center">
-            <Button
-              shape="round"
-              size={"large"}
-              className="font-bold bg-l1 text-white border-primary"
-            >
-              Sign Up
-            </Button>
+            <Link to={"https://signupluminadex.netlify.app/"}>
+              <Button
+                shape="round"
+                size={"large"}
+                className="font-bold bg-l1 text-white border-primary"
+              >
+                Sign Up
+              </Button>
+            </Link>
             <Button
               shape="round"
               size={"large"}
@@ -334,21 +336,23 @@ function HomePage() {
             </div>
           </Link>
         </div>
-        <div className="flex flex-row justify-center gap-x-6 text-dark-purple px-10">
-          <div className="flex flex-col gap-y-8 items-center border-2 border-primary shadow-md shadow-blue-500/50 p-3 rounded-lg">
+        <div className="flex flex-row justify-center gap-6 text-dark-purple flex-wrap">
+          <div className="flex flex-col gap-y-4 items-center border-2 border-primary shadow-md shadow-blue-500/50 p-5 rounded-lg ">
             <div className="font-bold">Builders & Community</div>
             <div className="text-5xl cursor-pointer">
               <GiWarPick />
             </div>
-            <Button
-              shape="round"
-              size={"large"}
-              className="font-bold bg-l1 text-white border-primary"
-            >
-              Sign Up
-            </Button>
+            <Link to={"https://signupluminadex.netlify.app/"}>
+              <Button
+                shape="round"
+                size={"large"}
+                className="font-bold bg-l1 text-white border-primary"
+              >
+                Sign Up
+              </Button>
+            </Link>
           </div>
-          <div className="flex flex-col gap-y-4 items-center border-2 border-primary shadow-md shadow-blue-500/50 p-5 rounded-lg">
+          <div className="flex flex-col gap-y-4 items-center border-2 border-primary shadow-md shadow-blue-500/50 p-5 rounded-lg ">
             <div className="font-bold">Investors and Partners</div>
             <div className="text-5xl cursor-pointer">
               <FaHandshake />
