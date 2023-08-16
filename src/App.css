@@ -96,12 +96,11 @@
 }
 
 .left-menu {
-  width: 150px !important;
   background-color: #351c75 !important;
 }
 
 .ant-drawer-content-wrapper {
-  width: 150px !important;
+  width: 80px !important;
 }
 
 .font-Verdana {
