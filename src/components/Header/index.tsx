@@ -28,12 +28,12 @@ const Header = () => {
     >
       <div className="flex flex-col h-full justify-between items-center">
         <div className="flex flex-col gap-4 items-center">
-          <Link to={"https://telegram.com"} onClick={onClose}>
+          <Link to={"https://telegram.com"} onClick={onClose} target="_blank">
             <div className="text-white text-3xl">
               <FaTelegramPlane />
             </div>
           </Link>
-          <Link to={"https://twitter.com"} onClick={onClose}>
+          <Link to={"https://twitter.com"} onClick={onClose} target="_blank">
             <div
               className="w-6 h-6"
               style={{
@@ -43,7 +43,7 @@ const Header = () => {
               }}
             ></div>
           </Link>
-          <Link to={"https://medium.com"} onClick={onClose}>
+          <Link to={"https://medium.com"} onClick={onClose} target="_blank">
             <div className="text-white text-3xl">
               <BiLogoMediumOld />
             </div>
@@ -84,12 +84,12 @@ const Header = () => {
 
         {leftMenu()}
         <div className="flex flex-row gap-4 text-lg items-center max-md:hidden">
-          <Link to={"https://telegram.com"} onClick={onClose}>
+          <Link to={"https://telegram.com"} onClick={onClose} target="_blank">
             <div className="text-white text-3xl">
               <FaTelegramPlane />
             </div>
           </Link>
-          <Link to={"https://twitter.com"} onClick={onClose}>
+          <Link to={"https://twitter.com"} onClick={onClose} target="_blank">
             <div
               className="w-6 h-6"
               style={{
@@ -99,7 +99,7 @@ const Header = () => {
               }}
             ></div>
           </Link>
-          <Link to={"https://medium.com"} onClick={onClose}>
+          <Link to={"https://medium.com"} onClick={onClose} target="_blank">
             <div className="text-white text-3xl">
               <BiLogoMediumOld />
             </div>

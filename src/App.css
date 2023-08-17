@@ -107,11 +107,12 @@
   font-family: Verdana;
 }
 
-.font-Agrandir-wide {
-  font-family: "Agrandir wide";
+.font-Metrophobic {
+  font-family: "Metrophobic";
 }
+
 li {
-  font-family: "Agrandir wide";
+  font-family: "Metrophobic";
 }
 
 .height-60 {
