@@ -8,10 +8,13 @@ const Footer = () => {
         <div className="py-5 flex flex-col gap-6 max-sm:px-6">
           <div className="flex flex-row gap-4 justify-start items-center">
             <div className="flex items-center text-xl flex-row gap-3">
-              <Link to={"https://interchain.io/"} target="_blank">
+              <Link to={"https://lumina/terms-of-service"} target="_blank">
                 ICF disclaimer
               </Link>
-              | Privacy
+              |
+              <Link to={"https://lumina/privacy-policy"} target="_blank">
+                Privacy
+              </Link>
             </div>
           </div>
         </div>

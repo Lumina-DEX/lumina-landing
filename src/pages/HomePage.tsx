@@ -5,8 +5,6 @@ import { FaHandshake } from "react-icons/fa";
 import { GiWarPick } from "react-icons/gi";
 import { MdGeneratingTokens, MdGroups3 } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { FaTelegramPlane } from "react-icons/fa";
-import { BiLogoMediumOld } from "react-icons/bi";
 
 declare global {
   interface Window {
