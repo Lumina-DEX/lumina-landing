@@ -35,7 +35,7 @@ function HomePage() {
       LASTNAME: User.lastName,
     };
     const event_data = {
-      name: "litepaper",
+      name: eventName,
     };
 
     window.sendinblue.track(eventName, properties, event_data);
@@ -50,7 +50,9 @@ function HomePage() {
     switch (eventName) {
       case "litepaper":
         trackRecord(eventName, visitor);
-        console.log("aaa", eventName);
+        break;
+      case "signup":
+        trackRecord(eventName, visitor);
         break;
       default:
         break;
@@ -97,6 +99,7 @@ function HomePage() {
                 shape="round"
                 size={"large"}
                 className="font-bold bg-l1 text-white border-primary"
+                onClick={() => brevoTrack("signup")}
               >
                 Sign Up
               </Button>
