@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "antd";
-import { BsCurrencyExchange } from "react-icons/bs";
 import { FaHandshake } from "react-icons/fa";
 import { GiWarPick } from "react-icons/gi";
-import { MdGeneratingTokens, MdGroups3 } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 declare global {
@@ -43,9 +41,9 @@ function HomePage() {
 
   const brevoTrack = (eventName: string) => {
     const visitor: User = {
-      email: "gregorysantini@luminadex.com",
-      firstName: "gregory",
-      lastName: "santini",
+      email: "client@luminadex.com",
+      firstName: "client",
+      lastName: "client",
     };
     switch (eventName) {
       case "litepaper":
@@ -119,11 +117,16 @@ function HomePage() {
       <div className="pt-10">
         <div className="container mx-auto flex flex-col gap-8 text-dark-purple">
           <div className="flex flex-row justify-center flex-wrap w-2/3 mx-auto">
-            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2">
+            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2 max-sm:gap-1">
               <div className="!font-Metrophobic text-xl font-bold">Clarity</div>
-              <div className="rounded-full border-2 border-primary p-6 shadow-md shadow-blue-500/50">
-                <BsCurrencyExchange className="text-[80px]" />
-              </div>
+              <div
+                className="w-36 h-36"
+                style={{
+                  backgroundImage: "url(/icon/clarity.png)",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></div>
               {windowWidth <= 425 ? (
                 <div className="!font-Metrophobic">
                   zkProofs enable private transactions with verified
@@ -137,13 +140,18 @@ function HomePage() {
                 </div>
               )}
             </div>
-            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2">
+            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2 max-sm:gap-1">
               <div className="!font-Metrophobic text-xl font-bold">
                 Compliance
               </div>
-              <div className="rounded-full border-2 border-primary p-6 shadow-md shadow-blue-500/50">
-                <MdGeneratingTokens className="text-[80px]" />
-              </div>
+              <div
+                className="w-36 h-36"
+                style={{
+                  backgroundImage: "url(/icon/compliance.png)",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></div>
               {windowWidth <= 425 ? (
                 <div className="!font-Metrophobic ">
                   Built-in KYC and permissioned liquidity pools
@@ -156,13 +164,18 @@ function HomePage() {
                 </div>
               )}
             </div>
-            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2">
+            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2 max-sm:gap-1">
               <div className="!font-Metrophobic text-xl font-bold">
                 Confidence
               </div>
-              <div className="rounded-full border-2 border-primary p-6 shadow-md shadow-blue-500/50">
-                <MdGroups3 className="text-[80px]" />
-              </div>
+              <div
+                className="w-36 h-36"
+                style={{
+                  backgroundImage: "url(/icon/confidence.png)",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></div>
               {windowWidth <= 425 ? (
                 <div className="!font-Metrophobic ">
                   Lumina is the guiding light for TradFi and Web2 DeFi ambitions
@@ -182,19 +195,19 @@ function HomePage() {
       <div className="flex flex-col text-dark-purple py-10">
         <div className="container mx-auto flex flex-col gap-8">
           <div className="text-2xl font-bold">
-            Backed by the top names in Blockchain and zk!
+            Backed by the Top Names in Blockchain and zk!
           </div>
           <div className="flex flex-row justify-center items-center flex-wrap px-28 gap-y-4">
             <div className="basis-1/2 flex justify-between">
               <div className="flex items-center justify-center basis-1/2 px-2">
-                <div className="h-32 w-32 flex justify-center  items-center px-2 py-2  ">
+                <div className="h-36 w-36 flex justify-center  items-center px-2 py-2  ">
                   <Link
                     to={"https://www.bigbrain.holdings/"}
                     target="_blank"
                     className="w-full h-full"
                     style={{
                       backgroundImage: "url(/investors/big.png)",
-                      backgroundSize: "100% 70%",
+                      backgroundSize: "100% 65%",
                       backgroundPosition: "center",
                       backgroundRepeat: "no-repeat",
                     }}
@@ -202,7 +215,7 @@ function HomePage() {
                 </div>
               </div>
               <div className="flex items-center justify-center basis-1/2 px-2">
-                <div className="h-32 w-32 flex justify-center  items-center px-2 py-2 ">
+                <div className="h-36 w-36 flex justify-center  items-center px-2 py-2 ">
                   <Link
                     to={"https://jumpcrypto.com/"}
                     target="_blank"
@@ -220,7 +233,7 @@ function HomePage() {
             </div>
             <div className="basis-1/2 flex flex-row">
               <div className="flex items-center justify-center basis-1/2 px-2">
-                <div className="h-32 w-32 cursor-pointer flex justify-center  items-center px-2 py-2 ">
+                <div className="h-36 w-36 cursor-pointer flex justify-center  items-center px-2 py-2 ">
                   <Link
                     to={"https://www.minafoundation.com/"}
                     target="_blank"
@@ -236,34 +249,41 @@ function HomePage() {
                 </div>
               </div>
               <div className="flex items-center justify-center basis-1/2 px-2">
-                <div className="h-32 w-32 cursor-pointer flex justify-center  items-center px-2 py-2">
+                <div className="h-36 w-36 cursor-pointer flex justify-center  items-center px-2 py-2">
                   <Link
                     to={"https://o1labs.org/"}
                     target="_blank"
                     className="w-full h-full"
-                    style={{
-                      backgroundImage: "url(/investors/O.png)",
-                      backgroundSize: "100% 70%",
-                      backgroundPosition: "center",
-                      backgroundRepeat: "no-repeat",
-                    }}
-                  ></Link>
+                    // style={{
+                    //   backgroundImage: "url(/investors/O.png)",
+                    //   backgroundSize: "100% 65%",
+                    //   backgroundPosition: "center",
+                    //   backgroundRepeat: "no-repeat",
+                    // }}
+                  >
+                    <img
+                      src="/investors/O.png"
+                      loading="lazy"
+                      alt="Mina"
+                      className="w-full h-full"
+                    ></img>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="py-4 px-10 text-xl !font-Metrophobic bg-l1 text-white leading-10">
-        <div className="container mx-auto ">
-          Lumina shines a new light on decentralized finance for inspired by
+      <div className="py-4 text-xl !font-Metrophobic bg-l1 text-white leading-10">
+        <div className="container mx-auto px-28 max-md:px-2">
+          Lumina shines a new light on decentralized finance; inspired by
           permissioned venues for trading large asset blocks while maintaining
-          privacy, compliance and auditability.
+          privacy, compliance, and auditability
         </div>
       </div>
       {/* section4 */}
       <div className="container mx-auto flex flex-col gap-8 text-dark-purple py-10">
-        <div className="text-2xl font-bold">Early builders</div>
+        <div className="text-2xl font-bold">Builders</div>
         <div className="flex flex-row justify-center flex-wrap px-28">
           <div className="flex flex-row basis-1/2">
             <div className="flex flex-col gap-1 basis-1/2 p-4">
@@ -284,7 +304,7 @@ function HomePage() {
                     Evan Kereiakes
                   </Link>
                   <br />
-                  <span className="italic">CEO</span>
+                  <span className="italic">Business</span>
                 </div>
               </div>
             </div>
@@ -306,7 +326,7 @@ function HomePage() {
                     Sebastien Guillemot
                   </Link>
                   <br />
-                  <span className="italic">CTO</span>
+                  <span className="italic">Back-End</span>
                 </div>
               </div>
             </div>
