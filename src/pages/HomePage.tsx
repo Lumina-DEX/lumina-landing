@@ -117,7 +117,7 @@ function HomePage() {
       <div className="pt-10">
         <div className="container mx-auto flex flex-col gap-8 text-dark-purple">
           <div className="flex flex-row justify-center flex-wrap w-2/3 mx-auto max-[325px]:w-full">
-            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2 max-sm:gap-0 max-sm:basis-full max-sm:py-0">
+            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2 max-sm:gap-0 max-sm:basis-full max-sm:pb-6 max-sm:pt-0">
               <div className="text-xl font-bold">Clarity</div>
               <div
                 className="w-36 h-36"
@@ -140,7 +140,7 @@ function HomePage() {
                 </div>
               )}
             </div>
-            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2 max-sm:gap-0 max-sm:basis-full max-sm:py-0">
+            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2 max-sm:gap-0 max-sm:basis-full max-sm:pb-6 max-sm:pt-0">
               <div className="text-xl font-bold">Compliance</div>
               <div
                 className="w-36 h-36"
