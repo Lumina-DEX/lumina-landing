@@ -108,7 +108,11 @@
 }
 
 .font-Metrophobic {
-  font-family: "Metrophobic";
+  font-family: "Metrophobic" !important;
+}
+
+.font-Trebuchet {
+  font-family: "Trebuchet MS" !important;
 }
 
 li {

@@ -87,7 +87,7 @@ function HomePage() {
           <div className="font-bold text-dark-purple text-3xl font-Verdana px-4">
             The future of finance is in plain sight
           </div>
-          <div className="text-dark-purple font-bold px-4">
+          <div className="text-dark-purple font-bold px-4 font-Trebuchet">
             Lumina is a zero-knowledge, KYC-enabled, enterprise-ready DEX on
             Mina
           </div>
@@ -116,9 +116,9 @@ function HomePage() {
       {/* section2 */}
       <div className="pt-10">
         <div className="container mx-auto flex flex-col gap-8 text-dark-purple">
-          <div className="flex flex-row justify-center flex-wrap w-2/3 mx-auto">
-            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2 max-sm:gap-1">
-              <div className="!font-Metrophobic text-xl font-bold">Clarity</div>
+          <div className="flex flex-row justify-center flex-wrap w-2/3 mx-auto max-[325px]:w-full">
+            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2 max-sm:gap-1 max-sm:basis-full">
+              <div className="font-Metrophobic text-xl font-bold">Clarity</div>
               <div
                 className="w-36 h-36"
                 style={{
@@ -128,20 +128,20 @@ function HomePage() {
                 }}
               ></div>
               {windowWidth <= 425 ? (
-                <div className="!font-Metrophobic">
+                <div className="font-Trebuchet">
                   zkProofs enable private transactions with verified
                   counterparties
                 </div>
               ) : (
-                <div className="!font-Metrophobic">
+                <div className="font-Trebuchet">
                   Zero-knowledge proofs enable trustless, private, transactions
                   with verified counterparties without exposing sensitive
                   information
                 </div>
               )}
             </div>
-            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2 max-sm:gap-1">
-              <div className="!font-Metrophobic text-xl font-bold">
+            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2 max-sm:gap-1 max-sm:basis-full">
+              <div className="font-Metrophobic text-xl font-bold">
                 Compliance
               </div>
               <div
@@ -153,19 +153,19 @@ function HomePage() {
                 }}
               ></div>
               {windowWidth <= 425 ? (
-                <div className="!font-Metrophobic ">
-                  Built-in KYC and permissioned liquidity pools
+                <div className="font-Trebuchet ">
+                  Built-in KYC and permissioned <br /> liquidity pools
                 </div>
               ) : (
-                <div className="!font-Metrophobic ">
+                <div className="font-Trebuchet ">
                   Built-in KYC, permissioned liquidity pools, and privacy for
                   retail and institutional users in accordance with prevailing
                   regulatory requirements
                 </div>
               )}
             </div>
-            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2 max-sm:gap-1">
-              <div className="!font-Metrophobic text-xl font-bold">
+            <div className="flex items-center basis-1/3 px-5 flex-col gap-4 py-2 max-sm:gap-1 max-sm:basis-full">
+              <div className="font-Metrophobic text-xl font-bold">
                 Confidence
               </div>
               <div
@@ -177,11 +177,11 @@ function HomePage() {
                 }}
               ></div>
               {windowWidth <= 425 ? (
-                <div className="!font-Metrophobic ">
+                <div className="font-Trebuchet ">
                   Lumina is the guiding light for TradFi and Web2 DeFi ambitions
                 </div>
               ) : (
-                <div className="!font-Metrophobic ">
+                <div className="font-Trebuchet ">
                   Our thoughtful approach to decentralized compliance positions
                   DeFi as a clear growth catalyst for TradFi and Web2 companies
                 </div>
@@ -274,8 +274,8 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="py-4 text-xl !font-Metrophobic bg-l1 text-white leading-10">
-        <div className="container mx-auto px-28 max-md:px-2">
+      <div className="py-4 text-xl font-Trebuchet bg-l1 text-white leading-10">
+        <div className="container mx-auto px-28 max-md:px-2 font-Trebuchet">
           Lumina shines a new light on decentralized finance; inspired by
           permissioned venues for trading large asset blocks while maintaining
           privacy, compliance, and auditability
@@ -296,7 +296,7 @@ function HomePage() {
                     backgroundRepeat: "no-repeat",
                   }}
                 ></div>
-                <div className="">
+                <div className="font-Trebuchet italic">
                   <Link
                     to="https://www.linkedin.com/in/evan-kereiakes/"
                     target="_blank"
@@ -318,7 +318,7 @@ function HomePage() {
                     backgroundRepeat: "no-repeat",
                   }}
                 ></div>
-                <div className="">
+                <div className="ont-Trebuchet italic">
                   <Link
                     to="https://www.linkedin.com/in/sebastiengllmt/"
                     target="_blank"
@@ -342,7 +342,7 @@ function HomePage() {
                     backgroundRepeat: "no-repeat",
                   }}
                 ></div>
-                <div className="">
+                <div className="ont-Trebuchet italic">
                   <Link
                     to="https://www.linkedin.com/in/greg-peter-santini-524886184/"
                     target="_blank"
@@ -423,9 +423,9 @@ function HomePage() {
             </Button>
           </div>
         </div>
-        <div className="text-xl text-dark-purple px-3 !font-Metrophobic">
+        <div className="text-base text-dark-purple px-3 font-Trebuchet">
           “There is always light. If only we’re brave enough to be it.”
-          <span className="text-base !font-Metrophobic"> - Amanda Gorman</span>
+          <span className="text-base font-Trebuchet"> - Amanda Gorman</span>
         </div>
       </div>
     </div>
