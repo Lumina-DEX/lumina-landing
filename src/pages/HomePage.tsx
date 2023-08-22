@@ -194,7 +194,7 @@ function HomePage() {
           <div className="text-2xl font-bold">
             Backed by the Top Names in Blockchain and ZK
           </div>
-          <div className="flex flex-row justify-center items-center flex-wrap px-28 gap-y-4">
+          <div className="flex flex-row justify-center items-center flex-wrap px-28 gap-y-4 py-2 sm:py-8">
             <div className="basis-1/2 flex justify-between">
               <div className="flex items-center justify-center basis-1/2 px-2">
                 <div className="h-20 w-36 flex justify-center  items-center px-2 py-2  ">
