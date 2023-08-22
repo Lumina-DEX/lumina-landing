@@ -195,7 +195,7 @@ function HomePage() {
       <div className="flex flex-col text-dark-purple py-10">
         <div className="container mx-auto flex flex-col gap-8">
           <div className="text-2xl font-bold">
-            Backed by the Top Names in Blockchain and zk!
+            Backed by the Top Names in Blockchain and ZK
           </div>
           <div className="flex flex-row justify-center items-center flex-wrap px-28 gap-y-4">
             <div className="basis-1/2 flex justify-between">
@@ -389,7 +389,7 @@ function HomePage() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="font-bold text-dark-purple text-3xl font-Verdana">
+        <div className="font-bold text-dark-purple text-2xl font-Verdana">
           Get Involved
         </div>
 
