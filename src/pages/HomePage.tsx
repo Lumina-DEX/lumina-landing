@@ -189,29 +189,30 @@ function HomePage() {
 
       {/* section3 */}
       <div className="flex flex-col text-dark-purple pt-10 pb-4">
-        <div className="container mx-auto flex flex-col">
+        <div className="container mx-auto flex flex-col gap-3">
           <div className="text-2xl font-bold">
             Backed by the Top Names in Blockchain and ZK
           </div>
           <div className="flex flex-row justify-center items-center flex-wrap px-28 gap-y-4">
             <div className="basis-1/2 flex justify-between">
               <div className="flex items-center justify-center basis-1/2 px-2">
-                <div className="h-36 w-36 flex justify-center  items-center px-2 py-2  ">
+                <div className="h-20 w-36 flex justify-center  items-center px-2 py-2  ">
                   <Link
                     to={"https://www.bigbrain.holdings/"}
                     target="_blank"
                     className="w-full h-full"
-                    style={{
-                      backgroundImage: "url(/investors/big.png)",
-                      backgroundSize: "100% 65%",
-                      backgroundPosition: "center",
-                      backgroundRepeat: "no-repeat",
-                    }}
-                  ></Link>
+                  >
+                    <img
+                      src="/investors/big.png"
+                      loading="lazy"
+                      alt="Jump"
+                      className="w-full h-full"
+                    ></img>
+                  </Link>
                 </div>
               </div>
               <div className="flex items-center justify-center basis-1/2 px-2">
-                <div className="h-36 w-36 flex justify-center  items-center px-2 py-2 ">
+                <div className="h-20 w-36 flex justify-center  items-center px-2 py-2 ">
                   <Link
                     to={"https://jumpcrypto.com/"}
                     target="_blank"
@@ -229,7 +230,7 @@ function HomePage() {
             </div>
             <div className="basis-1/2 flex flex-row">
               <div className="flex items-center justify-center basis-1/2 px-2">
-                <div className="h-36 w-36 cursor-pointer flex justify-center  items-center px-2 py-2 ">
+                <div className="h-20 w-36 cursor-pointer flex justify-center  items-center px-2 py-2 ">
                   <Link
                     to={"https://www.minafoundation.com/"}
                     target="_blank"
@@ -245,17 +246,11 @@ function HomePage() {
                 </div>
               </div>
               <div className="flex items-center justify-center basis-1/2 px-2">
-                <div className="h-36 w-36 cursor-pointer flex justify-center  items-center px-2 py-2">
+                <div className="h-20 w-36 cursor-pointer flex justify-center  items-center px-2 py-2">
                   <Link
                     to={"https://o1labs.org/"}
                     target="_blank"
                     className="w-full h-full"
-                    // style={{
-                    //   backgroundImage: "url(/investors/O.png)",
-                    //   backgroundSize: "100% 65%",
-                    //   backgroundPosition: "center",
-                    //   backgroundRepeat: "no-repeat",
-                    // }}
                   >
                     <img
                       src="/investors/O.png"
