@@ -30,7 +30,7 @@ function Landing() {
           </Router>
         </>
       ) : (
-        <div className="flex h-full w-full justify-center items-center">
+        <div className="flex h-screen w-full justify-center items-center">
           <img src={SpinnerImg} alt="" />
         </div>
       )}
