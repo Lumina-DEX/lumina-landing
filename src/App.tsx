@@ -46,7 +46,7 @@ function SignUp() {
         title="Lumina Signup"
         width="100%"
         height="100%"
-        src="https://5ee5af98.sibforms.com/serve/MUIFAGH_HzdyEGl2H6tNAw88cDB3RULedGebH0lPKJivK4eTzKUCdnZK-vbeBFs36tCJCJNTveA6cUquWRKSbqtllEYLOauSQHH6AYfdTxh_7cDdfzVTbrBPGzzdK_WnnLYburyrNuLFv2dCMFaP6N7VHKPkUqjRf9O3xCxcS06X1zQx3TZ7isnqbYkptNr8H5jbL7lITbvQDxdx"
+        src="https://5ee5af98.sibforms.com/serve/MUIFAFnJk1dGi9MIoIWEIXN_0u0BlTcO2kfbjQwZPN_7LbCAqa_g-R-BbzUtXKAuMRy2yWGqTUgUopFoWyfSK_JT1WDWGfk_uyLmWmkh5hgQ8BWOWmOry4j_h_dl144vs76TbJ9HjKhDWrDW50Bajy4JRRExaYxG7R_jTRIz4OBUj2xg0RJH9N77wZtHTsB-zLRanK9oSvs_4zx_"
         allowFullScreen
       ></iframe>
     </div>
@@ -61,7 +61,7 @@ function Contact() {
         title="Lumina Contact"
         width="100%"
         height="100%"
-        src="https://5ee5af98.sibforms.com/serve/MUIFABF8Z7uyiu2ktHyP3Z8RYbiJRV6MLElq2ffgGmxWvt6j0hB6cBEZoumkoZahPw6hgQfxtw4szfCQ0R07LgMTk_WRQ7Tft1e0Ub82WAXPLE6eX7MIeWhHPo7877rlrZ5Cu3roeek7nLim3uU9SRQb-kWPORUmWkb1am91fbY5Twq3qxPSnnGL6tHxFmdY0PbV0Lt5UptZ4Z3d"
+        src="https://5ee5af98.sibforms.com/serve/MUIFAPDRmzxHJyaOtltyLdKJMhQXPYo3ZAMc3N2M2gkPdLb_8EIIE9kspJXyvV3iNNkIxIpOsaAv6hIRAi7iCmBTEv_u69T21nL3Q03M5FuLcp4P9kcgYCG0esHBnDW_b2s4azIIj88xUD2t9KBnxi_b2Gh9lMjQNPhh0D9gFd11jDkJTfrwFiBA_IA4DKlhFHKeSkkFQzViH6HU"
         allowFullScreen
       ></iframe>
     </div>
