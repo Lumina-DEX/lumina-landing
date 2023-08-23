@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="flex flex-row gap-4 justify-start items-center max-[425px]:justify-center w-72 max-[425px]:w-full">
             <div className="flex items-center text-lg flex-row gap-3">
               <Link
-                to={"https://lumina/terms-of-service"}
+                to={"https://disclaimers.luminadex.com"}
                 target="_blank"
                 className="font-Trebuchet"
               >
@@ -17,7 +17,7 @@ const Footer = () => {
               </Link>
               |
               <Link
-                to={"https://lumina/privacy-policy"}
+                to={"https://disclaimers.luminadex.com/privacy-policy"}
                 target="_blank"
                 className="font-Trebuchet"
               >

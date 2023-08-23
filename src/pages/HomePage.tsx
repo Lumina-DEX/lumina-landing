@@ -92,7 +92,7 @@ function HomePage() {
             Mina
           </div>
           <div className="flex flex-row gap-x-4 justify-center">
-            <Link to={"https://signupluminadex.netlify.app/"} target="_blank">
+            <Link to={"https://signup.luminadex.com"} target="_blank">
               <Button
                 shape="round"
                 size={"large"}
@@ -102,14 +102,19 @@ function HomePage() {
                 Sign Up
               </Button>
             </Link>
-            <Button
-              shape="round"
-              size={"large"}
-              onClick={() => brevoTrack("litepaper")}
-              className="font-bold text-dark-purple border-primary bg-white text-white"
+            <Link
+              to={"https://docsend.com/view/5tviuhs8cqditskh"}
+              target="_blank"
             >
-              Litepaper
-            </Button>
+              <Button
+                shape="round"
+                size={"large"}
+                onClick={() => brevoTrack("litepaper")}
+                className="font-bold text-dark-purple border-primary bg-white text-white"
+              >
+                Litepaper
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -391,7 +396,7 @@ function HomePage() {
             <div className="text-5xl cursor-pointer">
               <GiWarPick />
             </div>
-            <Link to={"https://signupluminadex.netlify.app/"} target="_blank">
+            <Link to={"https://signup.luminadex.com"} target="_blank">
               <Button
                 shape="round"
                 size={"large"}
@@ -406,13 +411,15 @@ function HomePage() {
             <div className="text-5xl cursor-pointer">
               <FaHandshake />
             </div>
-            <Button
-              shape="round"
-              size={"large"}
-              className="font-bold text-dark-purple border-primary bg-white text-white"
-            >
-              Contact
-            </Button>
+            <Link to={"https://contact.luminadex.com"} target="_blank">
+              <Button
+                shape="round"
+                size={"large"}
+                className="font-bold text-dark-purple border-primary bg-white text-white"
+              >
+                Contact
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="text-lg text-dark-purple px-3 font-Trebuchet">

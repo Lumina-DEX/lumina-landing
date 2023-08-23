@@ -53,12 +53,29 @@ function SignUp() {
   );
 }
 
+function Contact() {
+  return (
+    <div className="w-screen h-screen">
+      <iframe
+        className="block mx-auto max-w-full"
+        title="Lumina Contact"
+        width="100%"
+        height="100%"
+        src="https://5ee5af98.sibforms.com/serve/MUIFAJhhBaHcwKwtM4CXzgQlKuhckP8OTkPSgEALAlOdi-aPwmWliSIpF1_c2KSJUm4AOM0_QOGjPSe-7MuMQMnkOLpsqq0Ob5_v1MwhR6AUCZgdAtmT3VvhIM7b3ea5VVBzLvPU6mgX0GSnixgeMPI_heXqfpToJbJFxtTz7hrd6gqH2k3AZCn8rFFjSH_-086EJE92SHGv24ZS"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+}
+
 function App() {
   const host = window.location.host;
   const subDomain = host.replace(".luminadex.com", "");
 
   if (subDomain === "signup") {
     return <SignUp />;
+  } else if (subDomain === "contact") {
+    return <Contact />;
   }
 
   return <Landing />;
