@@ -46,7 +46,7 @@ function Landing() {
 
 function Privacy() {
   return (
-    <div className="App bg-primary">
+    <div className="App bg-primary flex flex-col min-h-screen">
       <Router>
         <Layout>
           <Routes>
