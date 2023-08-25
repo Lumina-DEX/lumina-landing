@@ -1,5 +1,6 @@
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
+import Privacy from "./pages/Privacy";
 import { useEffect, useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
@@ -25,6 +26,7 @@ function Landing() {
             <Layout>
               <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/privacy-policy" element={<Privacy />} />
               </Routes>
             </Layout>
           </Router>
