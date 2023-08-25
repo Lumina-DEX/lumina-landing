@@ -1,7 +1,7 @@
 function DisclaimersPage() {
   return (
-    <div className="w-full py-16 ">
-      <div className="max-w-[640px] mx-auto py-16 px-4 min-h-screen">
+    <div className="w-full py-16 h-full flex-1">
+      <div className="max-w-[640px] mx-auto py-16 px-4">
         <div className="text-dark-purple text-left flex flex-col gap-y-6">
           <div className="flex flex-col gap-y-4">
             <div className="text-4xl">Disclaimer of Lumina</div>
