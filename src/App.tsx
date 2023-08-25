@@ -20,13 +20,18 @@ function Landing() {
   }, []);
 
   return (
-    <div className={`App ${imageLoaded && "bg-primary"}`}>
+    <div
+      className={`App flex flex-col min-h-screen ${
+        imageLoaded && "bg-primary"
+      }`}
+    >
       {imageLoaded ? (
         <>
           <Router>
             <Layout>
               <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/aa" element={<DisclaimersPage />} />
               </Routes>
             </Layout>
           </Router>
