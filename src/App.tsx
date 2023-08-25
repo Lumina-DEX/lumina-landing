@@ -31,7 +31,6 @@ function Landing() {
             <Layout>
               <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/aa" element={<DisclaimersPage />} />
               </Routes>
             </Layout>
           </Router>
