@@ -1,6 +1,7 @@
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import PrivacyPage from "./pages/PrivacyPage";
+import DisclaimersPage from "./pages/DisclaimersPage";
 import { useEffect, useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
@@ -45,7 +46,7 @@ function Privacy() {
       <Router>
         <Layout>
           <Routes>
-            <Route path="/" element={<PrivacyPage />} />
+            <Route path="/" element={<DisclaimersPage />} />
             <Route path="/privacy-policy" element={<PrivacyPage />} />
           </Routes>
         </Layout>
