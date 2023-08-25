@@ -1,5 +1,6 @@
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
+import PrivacyPage from "./pages/PrivacyPage";
 import { useEffect, useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
@@ -38,6 +39,20 @@ function Landing() {
   );
 }
 
+function Privacy() {
+  return (
+    <div className="App bg-primary">
+      <Router>
+        <Layout>
+          <Routes>
+            <Route path="/privacy-policy" element={<PrivacyPage />} />
+          </Routes>
+        </Layout>
+      </Router>
+    </div>
+  );
+}
+
 function SignUp() {
   return (
     <div className="w-screen h-screen">
@@ -71,13 +86,14 @@ function Contact() {
 function App() {
   const host = window.location.host;
   const subDomain = host.replace(".luminadex.com", "");
-
+  console.log("subdomain", subDomain);
   if (subDomain === "signup") {
     return <SignUp />;
   } else if (subDomain === "contact") {
     return <Contact />;
+  } else if (subDomain === "disclaimers") {
+    return <Privacy />;
   }
-
   return <Landing />;
 }
 
