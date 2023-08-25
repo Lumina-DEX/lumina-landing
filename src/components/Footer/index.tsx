@@ -17,7 +17,7 @@ const Footer = () => {
               </Link>
               |
               <Link
-                to={"/privacy-policy"}
+                to={"https://disclaimers.luminadex.com/privacy-policy"}
                 target="_blank"
                 className="font-Trebuchet"
               >
