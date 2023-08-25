@@ -45,6 +45,7 @@ function Privacy() {
       <Router>
         <Layout>
           <Routes>
+            <Route path="/" element={<PrivacyPage />} />
             <Route path="/privacy-policy" element={<PrivacyPage />} />
           </Routes>
         </Layout>
