@@ -2,6 +2,7 @@ import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import PrivacyPage from "./pages/PrivacyPage";
 import DisclaimersPage from "./pages/DisclaimersPage";
+import Header from "./components/Header";
 import { useEffect, useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
@@ -62,8 +63,13 @@ function Privacy() {
 function SignUp() {
   return (
     <div className="w-screen h-screen">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Header />} />
+        </Routes>
+      </Router>
       <iframe
-        className="block mx-auto max-w-full"
+        className="block mx-auto max-w-full pt-16"
         title="Lumina Signup"
         width="100%"
         height="100%"
@@ -92,7 +98,6 @@ function Contact() {
 function App() {
   const host = window.location.host;
   const subDomain = host.replace(".luminadex.com", "");
-  console.log("subdomain", subDomain);
   if (subDomain === "signup") {
     return <SignUp />;
   } else if (subDomain === "contact") {
