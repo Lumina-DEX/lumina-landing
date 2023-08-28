@@ -18,6 +18,7 @@ interface User {
 
 function HomePage() {
   const [windowWidth, setWindowWidth] = useState(1920);
+  
   useEffect(() => {
     setWindowWidth(window.innerWidth);
     function handleResize() {
