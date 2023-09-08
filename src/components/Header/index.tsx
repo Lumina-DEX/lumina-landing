@@ -78,7 +78,7 @@ const Header = () => {
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
           }}
-          onClick={() => (window.location.href = "/")}
+          onClick={() => (window.location.href = "https://luminadex.com/")}
         ></div>
         <div
           onClick={showDrawer}

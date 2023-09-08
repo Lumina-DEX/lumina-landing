@@ -18,6 +18,7 @@ interface User {
 
 function HomePage() {
   const [windowWidth, setWindowWidth] = useState(1920);
+
   useEffect(() => {
     setWindowWidth(window.innerWidth);
     function handleResize() {
@@ -71,7 +72,7 @@ function HomePage() {
             <img
               src="/logo/logo2.png"
               loading="lazy"
-              alt="lumina"
+              alt=""
               className="w-full h-full translate-y-[-32px]"
             ></img>
           </div>

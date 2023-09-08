@@ -1,5 +1,8 @@
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
+import PrivacyPage from "./pages/PrivacyPage";
+import DisclaimersPage from "./pages/DisclaimersPage";
+import Header from "./components/Header";
 import { useEffect, useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
@@ -18,7 +21,11 @@ function Landing() {
   }, []);
 
   return (
-    <div className={`App ${imageLoaded && "bg-primary"}`}>
+    <div
+      className={`App flex flex-col min-h-screen ${
+        imageLoaded && "bg-primary"
+      }`}
+    >
       {imageLoaded ? (
         <>
           <Router>
@@ -38,11 +45,31 @@ function Landing() {
   );
 }
 
+function Privacy() {
+  return (
+    <div className="App bg-primary flex flex-col min-h-screen">
+      <Router>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<DisclaimersPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPage />} />
+          </Routes>
+        </Layout>
+      </Router>
+    </div>
+  );
+}
+
 function SignUp() {
   return (
     <div className="w-screen h-screen">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Header />} />
+        </Routes>
+      </Router>
       <iframe
-        className="block mx-auto max-w-full"
+        className="block mx-auto max-w-full pt-16"
         title="Lumina Signup"
         width="100%"
         height="100%"
@@ -71,13 +98,13 @@ function Contact() {
 function App() {
   const host = window.location.host;
   const subDomain = host.replace(".luminadex.com", "");
-
   if (subDomain === "signup") {
     return <SignUp />;
   } else if (subDomain === "contact") {
     return <Contact />;
+  } else if (subDomain === "disclaimers") {
+    return <Privacy />;
   }
-
   return <Landing />;
 }
 
