@@ -2,6 +2,7 @@ import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import PrivacyPage from "./pages/PrivacyPage";
 import DisclaimersPage from "./pages/DisclaimersPage";
+import SplashPage from "./pages/SplashPage";
 import Header from "./components/Header";
 import { useEffect, useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
@@ -32,6 +33,7 @@ function Landing() {
             <Layout>
               <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/aaa" element={<SplashPage />} />
               </Routes>
             </Layout>
           </Router>
@@ -57,6 +59,14 @@ function Privacy() {
         </Layout>
       </Router>
     </div>
+  );
+}
+
+function Splash() {
+  return (
+    <Router>
+      <SplashPage />
+    </Router>
   );
 }
 
@@ -104,6 +114,8 @@ function App() {
     return <Contact />;
   } else if (subDomain === "disclaimers") {
     return <Privacy />;
+  } else if (subDomain === "splash") {
+    return <Splash />;
   }
   return <Landing />;
 }

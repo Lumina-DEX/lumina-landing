@@ -69,7 +69,7 @@ const Header = () => {
   );
 
   return (
-    <div className="fixed top-0 left-0 h-[64px] w-full z-[2] bg-l1 shadow-10 px-8 max-sm:px-4">
+    <div className="fixed top-0 left-0 h-[64px] w-full z-[2] bg-dark-purple shadow-10 px-8 max-sm:px-4">
       <div className="flex w-full justify-between h-full items-center">
         <div
           className="w-12 h-11 cursor-pointer max-md:hidden"

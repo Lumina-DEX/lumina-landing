@@ -97,7 +97,7 @@ function HomePage() {
               <Button
                 shape="round"
                 size={"large"}
-                className="font-bold bg-l1 text-white border-primary"
+                className="font-bold bg-dark-purple text-white border-primary"
                 onClick={() => brevoTrack("signup")}
               >
                 Sign Up
@@ -272,7 +272,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="py-4 text-xl font-Trebuchet bg-l1 text-white leading-10">
+      <div className="py-4 text-xl font-Trebuchet bg-dark-purple text-white leading-10">
         <div className="container mx-auto px-28 max-md:px-2 font-Trebuchet">
           Lumina shines a new light on decentralized finance; inspired by
           permissioned venues for trading large asset blocks while maintaining
@@ -401,7 +401,7 @@ function HomePage() {
               <Button
                 shape="round"
                 size={"large"}
-                className="font-bold bg-l1 text-white border-primary"
+                className="font-bold bg-dark-purple text-white border-primary"
               >
                 Sign Up
               </Button>
