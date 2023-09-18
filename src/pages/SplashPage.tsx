@@ -20,37 +20,37 @@ function SplashPage() {
             height="200px"
           ></img>
         </div>
-        <div className="flex justify-center mt-20 font-Verdana text-dark-purple text-4xl font-bold">
-          ENTERPRISE PORTAL
+        <div className="flex text-center justify-center mt-20 font-Verdana text-dark-purple text-4xl font-bold uppercase">
+          Enterprise Portal
         </div>
-        <div className="flex flex-col gap-y-4 mt-16">
+        <div className="flex flex-col gap-y-4 mt-16 px-3">
           <Link
-            className="bg-dark-purple py-4 text-center text-xl text-white rounded-md font-Metrophobic"
+            className="bg-dark-purple py-4 text-center text-xl text-white rounded-md font-Metrophobic uppercase"
             to={"https://calendly.com/luminadex"}
             target="_blank"
           >
-            BOOK A MEETING
+            Book a Meeting
           </Link>
           <Link
-            className="bg-dark-purple py-4 text-center text-xl text-white rounded-md font-Metrophobic"
+            className="bg-dark-purple py-4 text-center text-xl text-white rounded-md font-Metrophobic uppercase"
             to={"https://www.linkedin.com/in/evan-kereiakes/"}
             target="_blank"
           >
-            CONNECT ON LINKEDIN
+            Connect on Linkedin
           </Link>
           <Link
-            className="bg-dark-purple py-4 text-center text-xl text-white rounded-md font-Metrophobic"
-            to={"https://qrcodes.pro/7Zw0Zo"}
+            className="bg-dark-purple py-4 text-center text-xl text-white rounded-md font-Metrophobic uppercase"
+            to={"https://t.me/evankereiakes"}
             target="_blank"
           >
-            CONNECT ON TELEGRAM
+            Connect on Telegram
           </Link>
           <Link
-            className="bg-dark-purple py-4 text-center text-xl text-white rounded-md font-Metrophobic"
+            className="bg-dark-purple py-4 text-center text-xl text-white rounded-md font-Metrophobic uppercase"
             to={"https://luminadex.com/"}
             target="_blank"
           >
-            VISIT SITE
+            Visit Site
           </Link>
         </div>
       </div>
