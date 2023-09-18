@@ -117,7 +117,8 @@ function App() {
   } else if (subDomain === "splash") {
     return <Splash />;
   }
-  return <Landing />;
+  return <Splash />;
+  // return <Landing />;
 }
 
 export default App;
