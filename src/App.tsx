@@ -115,7 +115,8 @@ function App() {
   } else if (subDomain === "disclaimers") {
     return <Privacy />;
   } else if (subDomain === "splash") {
-    return <Splash />;
+    // return <Splash />;
+    return <Landing />;
   }
   return <Splash />;
   // return <Landing />;
