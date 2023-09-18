@@ -2,15 +2,8 @@ import { Link } from "react-router-dom";
 
 function SplashPage() {
   return (
-    <div
-      className="min-h-screen"
-      style={{
-        backgroundImage: "url(/background/background.png)",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="container flex flex-col mx-auto">
+    <div className="min-h-screen splash-background">
+      <div className="container flex flex-col mx-auto relative">
         <div className="flex justify-center mt-16">
           <img
             src="/logo/logo.png"
