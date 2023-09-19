@@ -46,7 +46,7 @@ function SplashPage() {
   return (
     <div className="min-h-screen splash-background">
       <div className="container flex flex-col mx-auto relative">
-        <div className="flex justify-center mt-16">
+        <div className="flex justify-center">
           <img
             src="/logo/logo.png"
             loading="lazy"

@@ -128,3 +128,22 @@ li {
   color: #351c75 !important;
   border-color: #ffeae0 !important;
 }
+
+.splash-background {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.splash-background::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+  background-image: url("/public/background/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
