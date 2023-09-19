@@ -15,20 +15,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.splash-background {
-  position: relative;
-}
-
-.splash-background::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.75;
-  background-image: url("/public/background/background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
