@@ -114,7 +114,7 @@ function App() {
     return <Contact />;
   } else if (subDomain === "disclaimers") {
     return <Privacy />;
-  } else if (subDomain === "splash") {
+  } else if (subDomain === "getstarted") {
     return <Splash />;
   }
   return <Landing />;
