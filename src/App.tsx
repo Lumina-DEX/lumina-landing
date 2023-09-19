@@ -114,12 +114,10 @@ function App() {
     return <Contact />;
   } else if (subDomain === "disclaimers") {
     return <Privacy />;
-  } else if (subDomain === "splash") {
-    // return <Splash />;
-    return <Landing />;
+  } else if (subDomain === "getstarted") {
+    return <Splash />;
   }
-  return <Splash />;
-  // return <Landing />;
+  return <Landing />;
 }
 
 export default App;
