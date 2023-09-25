@@ -129,8 +129,8 @@ function SplashPage() {
             </div>
           </div>
           <div className="bg-white border-purple border-[3px] rounded-[36px] py-4 px-3 flex flex-col gap-y-2 w-[294px]">
-            <div className="text-center uppercase text-dark-purple text-2xl">
-              Sandbox
+            <div className="text-center text-dark-purple text-2xl">
+              SANDBOX(Soon)
             </div>
             <div className="flex gap-y-2 flex-col mt-4">
               <div>
