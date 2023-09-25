@@ -97,7 +97,7 @@ function HomePage() {
               <Button
                 shape="round"
                 size={"large"}
-                className="font-bold bg-dark-purple text-white border-primary"
+                className="font-bold bg-dark-purple text-white border-purple"
                 onClick={() => brevoTrack("signup")}
               >
                 Sign Up
@@ -111,7 +111,7 @@ function HomePage() {
                 shape="round"
                 size={"large"}
                 onClick={() => brevoTrack("litepaper")}
-                className="font-bold text-dark-purple border-primary bg-white text-white"
+                className="font-bold text-dark-purple border-purple bg-white text-white"
               >
                 Litepaper
               </Button>
@@ -287,7 +287,7 @@ function HomePage() {
             <div className="flex flex-col gap-1 basis-1/2 p-4">
               <div className="flex flex-col gap-3 items-center">
                 <div
-                  className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
+                  className="w-32 h-32 rounded-full border-2 border-purple shadow-md shadow-blue-500/50"
                   style={{
                     backgroundImage: "url(/builders/Evan.jpg)",
                     backgroundSize: "contain",
@@ -309,7 +309,7 @@ function HomePage() {
             <div className="flex flex-col gap-1 basis-1/2 p-4">
               <div className="flex flex-col gap-3 items-center">
                 <div
-                  className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
+                  className="w-32 h-32 rounded-full border-2 border-purple shadow-md shadow-blue-500/50"
                   style={{
                     backgroundImage: "url(/builders/Sebastien.jpg)",
                     backgroundSize: "contain",
@@ -333,7 +333,7 @@ function HomePage() {
             <div className="flex flex-col gap-1 basis-1/2 p-4">
               <div className="flex flex-col gap-3 items-center">
                 <div
-                  className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
+                  className="w-32 h-32 rounded-full border-2 border-purple shadow-md shadow-blue-500/50"
                   style={{
                     backgroundImage: "url(/builders/Gregory.png)",
                     backgroundSize: "contain",
@@ -355,7 +355,7 @@ function HomePage() {
             <div className="flex flex-col gap-1 basis-1/2 p-4">
               <div className="flex flex-col gap-3 items-center">
                 <div
-                  className="w-32 h-32 rounded-full border-2 border-primary shadow-md shadow-blue-500/50"
+                  className="w-32 h-32 rounded-full border-2 border-purple shadow-md shadow-blue-500/50"
                   style={{
                     backgroundImage: "url(/builders/Kesu.png)",
                     backgroundSize: "180% 108%",
@@ -392,7 +392,7 @@ function HomePage() {
         </div>
 
         <div className="flex flex-row justify-center gap-6 text-dark-purple flex-wrap">
-          <div className="flex flex-col gap-y-4 items-center border-2 border-primary shadow-md shadow-blue-500/50 p-5 rounded-lg ">
+          <div className="flex flex-col gap-y-4 items-center border-2 border-purple shadow-md shadow-blue-500/50 p-5 rounded-lg ">
             <div className="font-bold">Builders & Community</div>
             <div className="text-5xl cursor-pointer">
               <GiWarPick />
@@ -401,13 +401,13 @@ function HomePage() {
               <Button
                 shape="round"
                 size={"large"}
-                className="font-bold bg-dark-purple text-white border-primary"
+                className="font-bold bg-dark-purple text-white border-purple"
               >
                 Sign Up
               </Button>
             </Link>
           </div>
-          <div className="flex flex-col gap-y-4 items-center border-2 border-primary shadow-md shadow-blue-500/50 p-5 rounded-lg ">
+          <div className="flex flex-col gap-y-4 items-center border-2 border-purple shadow-md shadow-blue-500/50 p-5 rounded-lg ">
             <div className="font-bold">Investors and Partners</div>
             <div className="text-5xl cursor-pointer">
               <FaHandshake />
@@ -416,7 +416,7 @@ function HomePage() {
               <Button
                 shape="round"
                 size={"large"}
-                className="font-bold text-dark-purple border-primary bg-white text-white"
+                className="font-bold text-dark-purple border-purple bg-white text-white"
               >
                 Contact
               </Button>

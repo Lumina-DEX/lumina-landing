@@ -59,6 +59,10 @@
   background-color: #351c75;
 }
 
+.bg-light-purple {
+  background-color: #d9d2e9;
+}
+
 .bg-primary {
   background-color: #ffffff;
 }
@@ -91,7 +95,7 @@
   border-color: #ffeae0;
 }
 
-.border-primary {
+.border-purple {
   border-color: #351c75;
 }
 
