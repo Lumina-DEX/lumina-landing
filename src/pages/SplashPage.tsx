@@ -120,7 +120,7 @@ function SplashPage() {
               </Link>
               <Link
                 className="w-32   bg-zinc-700 py-3 text-center text-lg text-white rounded-md font-Metrophobic uppercase"
-                to={"https://www.linkedin.com/in/evan-kereiakes/"}
+                to={"https://twitter.com/LuminaDEX"}
                 target="_blank"
                 onClick={() => brevoTrack("Social")}
               >
@@ -129,9 +129,7 @@ function SplashPage() {
             </div>
           </div>
           <div className="bg-white rounded-[36px] py-4 px-4 flex flex-col gap-y-2 w-[294px] custom-shadow">
-            <div className="text-center text-zinc-700 text-2xl">
-              SANDBOX(Soon)
-            </div>
+            <div className="text-center text-zinc-700 text-2xl">SANDBOX</div>
             <div className="flex gap-y-2 flex-col mt-4">
               <div>
                 <Input
