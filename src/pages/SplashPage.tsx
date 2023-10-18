@@ -136,13 +136,13 @@ function SplashPage() {
               <div>
                 <Input
                   placeholder="Email"
-                  className="text-center border-purple text-zinc-700 italic bg-light-purple h-11"
+                  className="text-center border-zinc-300 text-zinc-700 italic bg-gray-100 h-11"
                 />
               </div>
               <div>
                 <input
                   type="password"
-                  className="text-center border-purple text-zinc-700 italic bg-light-purple h-11 w-full rounded-md border"
+                  className="text-center border-zinc-300 text-zinc-700 italic bg-gray-100 h-11 w-full rounded-md border"
                   placeholder="Password"
                 />
               </div>
