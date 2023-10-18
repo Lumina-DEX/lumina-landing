@@ -65,17 +65,17 @@ function SplashPage() {
             height="200px"
           ></img>
         </div>
-        <div className="flex text-center justify-center font-Verdana text-dark-purple text-4xl font-bold uppercase max-sm:text-2xl">
+        <div className="flex text-center justify-center font-Verdana text-zinc-700 text-4xl font-bold uppercase max-sm:text-2xl">
           Enterprise Portal
         </div>
         <div className="flex justify-center gap-4 px-3 flex-wrap">
-          <div className="bg-light-purple border-purple border-[3px] rounded-[36px] py-4 px-3 flex flex-col gap-y-2 w-[294px]">
-            <div className="text-center uppercase text-dark-purple text-2xl">
+          <div className="bg-gray-100 rounded-[36px] py-4 px-3 flex flex-col gap-y-2 w-[294px] custom-shadow">
+            <div className="text-center uppercase text-zinc-700 text-2xl">
               Connect
             </div>
             <div className="flex gap-x-2 justify-center mt-4">
               <Link
-                className="w-32   bg-dark-purple py-3 text-center text-lg text-white rounded-md font-Metrophobic uppercase"
+                className="w-32 bg-zinc-700 py-3 text-center text-lg text-white rounded-md font-Metrophobic uppercase"
                 to={"https://www.linkedin.com/in/evan-kereiakes/"}
                 target="_blank"
                 onClick={() => brevoTrack("Linkedin")}
@@ -83,7 +83,7 @@ function SplashPage() {
                 Linkedin
               </Link>
               <Link
-                className="w-32   bg-dark-purple py-3 text-center text-lg text-white rounded-md font-Metrophobic uppercase"
+                className="w-32   bg-zinc-700 py-3 text-center text-lg text-white rounded-md font-Metrophobic uppercase"
                 to={"https://t.me/evankereiakes"}
                 target="_blank"
                 onClick={() => brevoTrack("Telegram")}
@@ -93,7 +93,7 @@ function SplashPage() {
             </div>
             <div className="flex gap-x-2 justify-center">
               <Link
-                className="w-32   bg-dark-purple py-3 text-center text-lg text-white rounded-md font-Metrophobic uppercase"
+                className="w-32   bg-zinc-700 py-3 text-center text-lg text-white rounded-md font-Metrophobic uppercase"
                 to={"mailto:contact@luminadex.com"}
                 target="_blank"
                 onClick={() => brevoTrack("Email")}
@@ -101,7 +101,7 @@ function SplashPage() {
                 Email
               </Link>
               <Link
-                className="w-32   bg-dark-purple py-3 text-center text-lg text-white rounded-md font-Metrophobic uppercase"
+                className="w-32   bg-zinc-700 py-3 text-center text-lg text-white rounded-md font-Metrophobic uppercase"
                 to={"https://calendly.com/luminadex"}
                 target="_blank"
                 onClick={() => brevoTrack("Meeting")}
@@ -111,7 +111,7 @@ function SplashPage() {
             </div>
             <div className="flex gap-x-2 justify-center">
               <Link
-                className="w-32   bg-dark-purple py-3 text-center text-lg text-white rounded-md font-Metrophobic uppercase"
+                className="w-32   bg-zinc-700 py-3 text-center text-lg text-white rounded-md font-Metrophobic uppercase"
                 to={"https://luminadex.com/"}
                 target="_blank"
                 onClick={() => brevoTrack("Website")}
@@ -119,7 +119,7 @@ function SplashPage() {
                 Website
               </Link>
               <Link
-                className="w-32   bg-dark-purple py-3 text-center text-lg text-white rounded-md font-Metrophobic uppercase"
+                className="w-32   bg-zinc-700 py-3 text-center text-lg text-white rounded-md font-Metrophobic uppercase"
                 to={"https://www.linkedin.com/in/evan-kereiakes/"}
                 target="_blank"
                 onClick={() => brevoTrack("Social")}
@@ -128,35 +128,35 @@ function SplashPage() {
               </Link>
             </div>
           </div>
-          <div className="bg-white border-purple border-[3px] rounded-[36px] py-4 px-3 flex flex-col gap-y-2 w-[294px]">
-            <div className="text-center text-dark-purple text-2xl">
+          <div className="bg-white rounded-[36px] py-4 px-4 flex flex-col gap-y-2 w-[294px] custom-shadow">
+            <div className="text-center text-zinc-700 text-2xl">
               SANDBOX(Soon)
             </div>
             <div className="flex gap-y-2 flex-col mt-4">
               <div>
                 <Input
                   placeholder="Email"
-                  className="text-center border-purple text-dark-purple italic bg-light-purple h-11"
+                  className="text-center border-purple text-zinc-700 italic bg-light-purple h-11"
                 />
               </div>
               <div>
                 <input
                   type="password"
-                  className="text-center border-purple text-dark-purple italic bg-light-purple h-11 w-full rounded-md border"
+                  className="text-center border-purple text-zinc-700 italic bg-light-purple h-11 w-full rounded-md border"
                   placeholder="Password"
                 />
               </div>
               <Link
-                className="w-full bg-dark-purple py-2 text-center text-lg text-white rounded-md font-Metrophobic"
+                className="w-full bg-zinc-700 py-2 text-center text-lg text-white rounded-md font-Metrophobic"
                 to={""}
                 target="_blank"
                 onClick={() => brevoTrack("SignIn")}
               >
-                Sign In
+                SIGN IN
               </Link>
               <div className="flex justify-between">
                 <Link
-                  className="text-dark-purple font-Metrophobic text-xs underline"
+                  className="text-zinc-700 font-Metrophobic text-xs underline"
                   to={"https://signup.luminadex.com"}
                   target="_blank"
                   onClick={() => brevoTrack("Signup")}
@@ -164,7 +164,7 @@ function SplashPage() {
                   Sign Up
                 </Link>
                 <Link
-                  className="text-dark-purple font-Metrophobic text-xs underline"
+                  className="text-zinc-700 font-Metrophobic text-xs underline"
                   to={""}
                   target="_blank"
                   onClick={() => brevoTrack("ForgetPassword")}

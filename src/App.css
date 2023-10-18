@@ -146,8 +146,12 @@ li {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.75;
+  opacity: 0.3;
   background-image: url("/public/background/background.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.custom-shadow {
+  box-shadow: 2px 5px 16px 0.1px gray;
 }
