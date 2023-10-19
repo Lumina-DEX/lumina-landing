@@ -155,7 +155,7 @@ function SplashPage() {
               <div className="flex justify-between">
                 <Link
                   className="text-zinc-700 font-Metrophobic text-xs underline"
-                  to={"https://signup.luminadex.com"}
+                  to={"https://contact.luminadex.com/"}
                   target="_blank"
                   onClick={() => brevoTrack("Signup")}
                 >
