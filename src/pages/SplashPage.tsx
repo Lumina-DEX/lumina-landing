@@ -73,7 +73,7 @@ function SplashPage() {
             <div className="text-center uppercase text-zinc-700 text-2xl">
               Connect
             </div>
-            <div className="flex gap-x-2 justify-center mt-4">
+            <div className="flex gap-x-2 justify-center mt-2">
               <Link
                 className="w-32 bg-zinc-700 py-3 text-center text-lg text-white rounded-md font-Metrophobic uppercase"
                 to={"https://www.linkedin.com/in/evan-kereiakes/"}
@@ -130,7 +130,7 @@ function SplashPage() {
           </div>
           <div className="bg-white rounded-[36px] py-4 px-4 flex flex-col gap-y-2 w-[294px] custom-shadow">
             <div className="text-center text-zinc-700 text-2xl">SANDBOX</div>
-            <div className="flex gap-y-2 flex-col mt-4">
+            <div className="flex gap-y-2 flex-col mt-2">
               <div>
                 <Input
                   placeholder="Email"
