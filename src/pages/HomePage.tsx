@@ -281,13 +281,13 @@ function HomePage() {
       </div>
       {/* section4 */}
       <div className="container mx-auto flex flex-col gap-8 text-dark-purple py-10">
-        <div className="text-2xl font-bold">Builders</div>
+        <div className="text-2xl font-bold">Builders and Advisors</div>
         <div className="flex flex-row justify-center flex-wrap px-28">
           <div className="flex flex-row basis-1/2">
             <div className="flex flex-col gap-1 basis-1/2 p-4">
               <div className="flex flex-col gap-3 items-center">
                 <div
-                  className="w-32 h-32 rounded-full border-2 border-purple shadow-md shadow-blue-500/50"
+                  className="w-32 h-32 rounded-full shadow-pfp shadow-gray-500"
                   style={{
                     backgroundImage: "url(/builders/Evan.jpg)",
                     backgroundSize: "contain",
@@ -309,7 +309,7 @@ function HomePage() {
             <div className="flex flex-col gap-1 basis-1/2 p-4">
               <div className="flex flex-col gap-3 items-center">
                 <div
-                  className="w-32 h-32 rounded-full border-2 border-purple shadow-md shadow-blue-500/50"
+                  className="w-32 h-32 rounded-full shadow-pfp shadow-gray-500"
                   style={{
                     backgroundImage: "url(/builders/Sebastien.jpg)",
                     backgroundSize: "contain",
@@ -333,7 +333,7 @@ function HomePage() {
             <div className="flex flex-col gap-1 basis-1/2 p-4">
               <div className="flex flex-col gap-3 items-center">
                 <div
-                  className="w-32 h-32 rounded-full border-2 border-purple shadow-md shadow-blue-500/50"
+                  className="w-32 h-32 rounded-full shadow-pfp shadow-gray-500"
                   style={{
                     backgroundImage: "url(/builders/Gregory.png)",
                     backgroundSize: "contain",
@@ -355,7 +355,7 @@ function HomePage() {
             <div className="flex flex-col gap-1 basis-1/2 p-4">
               <div className="flex flex-col gap-3 items-center">
                 <div
-                  className="w-32 h-32 rounded-full border-2 border-purple shadow-md shadow-blue-500/50"
+                  className="w-32 h-32 rounded-full shadow-pfp shadow-gray-500"
                   style={{
                     backgroundImage: "url(/builders/Kesu.png)",
                     backgroundSize: "180% 108%",
