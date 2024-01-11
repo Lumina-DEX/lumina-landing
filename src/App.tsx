@@ -1,7 +1,7 @@
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import PrivacyPage from "./pages/PrivacyPage";
-import DisclaimersPage from "./pages/DisclaimersPage";
+// import DisclaimersPage from "./pages/DisclaimersPage";
 import SplashPage from "./pages/SplashPage";
 import Header from "./components/Header";
 import { useEffect, useState } from "react";
@@ -53,7 +53,7 @@ function Privacy() {
       <Router>
         <Layout>
           <Routes>
-            <Route path="/" element={<DisclaimersPage />} />
+            {/* <Route path="/" element={<DisclaimersPage />} /> */}
             <Route path="/privacy-policy" element={<PrivacyPage />} />
           </Routes>
         </Layout>
