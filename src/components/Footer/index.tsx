@@ -21,12 +21,12 @@ const Footer = () => {
                 target="_blank"
                 className="font-Trebuchet"
               >
-                Privacy
+                Privacy Policy
               </Link>
             </div>
           </div>
           <div className="flex justify-start max-[425px]:justify-center max-[425px]:w-full font-Trebuchet">
-            @2023 copyright Lumina Labs Inc
+            @{new Date().getFullYear()} copyright Lumina Labs Inc
           </div>
         </div>
       </div>
