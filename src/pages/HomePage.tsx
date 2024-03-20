@@ -341,10 +341,7 @@ function HomePage() {
                   }}
                 ></div>
                 <div className="font-Trebuchet">
-                  <Link
-                    to="https://www.linkedin.com/in/greg-santini-524886184/"
-                    target="_blank"
-                  >
+                  <Link to="https://github.com/gregory-lumina" target="_blank">
                     Gregory Santini
                   </Link>
                   <br />
