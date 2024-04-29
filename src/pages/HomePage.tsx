@@ -421,7 +421,7 @@ function HomePage() {
           </div>
         </div>
         <div className="text-lg text-dark-purple px-3 font-Trebuchet">
-          “There is always light. If only we’re brave enough to be it.”
+          “There is always light.”
           <span className="text-lg font-Trebuchet"> - Amanda Gorman</span>
         </div>
       </div>
