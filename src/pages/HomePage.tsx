@@ -335,17 +335,17 @@ function HomePage() {
                 <div
                   className="w-32 h-32 rounded-full shadow-pfp shadow-gray-500"
                   style={{
-                    backgroundImage: "url(/builders/Gregory.png)",
+                    backgroundImage: "url(/builders/Eddy.jpg)",
                     backgroundSize: "contain",
                     backgroundRepeat: "no-repeat",
                   }}
                 ></div>
                 <div className="font-Trebuchet">
-                  <Link to="https://github.com/gregory-lumina" target="_blank">
-                    Gregory Santini
+                  <Link to="https://www.linkedin.com/in/eddy-boughioul-aa40aaa9/" target="_blank">
+                    Eddy Boughioul
                   </Link>
                   <br />
-                  <span className="italic">Front-End</span>
+                  <span className="italic">Protocol Engineer</span>
                 </div>
               </div>
             </div>
